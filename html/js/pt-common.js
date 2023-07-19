@@ -383,6 +383,74 @@ $(document).ready(function () {
                     ]
 
     });
+    
+    $(".imgFill").imgLiquid();
+    
+    $('.sp_mod_history .history:first').show();
+    $(".sp_mod_history .tabs li a").click(function () {
+        var tab_id = $(this).attr("data-tab");
+        $(this).parent().siblings().removeClass("active");
+        $(this).parent().addClass("active");
+        $(this).parent().parent().parent().parent().find(".history").hide();
+        $("#" + tab_id).fadeIn();
+        
+    });
+    
+    $('.sp_mod_content .more').click(function(){
+        $(this).parent().toggleClass('more_view');
+    })
+    
+    
+    $('.sp_mod_interview .itv_wrap').slick({
+        slidesToShow: 1,
+        arrows: true,
+        dots:false,
+        infinite:false
+
+    });
+    
+    var swiper = new Swiper(".sp_mod_comview .img_wrap", {
+        slidesPerView: 1,
+        arrows:false,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".sp_mod_strategy .guide_wrap", {
+        slidesPerView: 3,
+  spaceBetween: 20,
+        arrows:false,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        breakpoints: {
+        1024: {
+            slidesPerView: 3,  //브라우저가 768보다 클 때
+          },
+          768: {
+            slidesPerView: 2,  //브라우저가 768보다 클 때
+          },
+            480: {
+            slidesPerView: 1,  //브라우저가 768보다 클 때
+          },
+              0: {
+            slidesPerView: 1,  //브라우저가 768보다 클 때
+          },
+        }
+    });
+  
+
 
 });
 
