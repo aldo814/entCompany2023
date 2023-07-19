@@ -633,7 +633,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 
 .b_mod_partners .b_part{display: flex;flex-wrap: wrap}
 .b_mod_partners .b_part > div{width: calc(20% - 16px);margin-right: 20px;display: flex;justify-content: center;align-items: center;border: 1px solid #dddddd;box-sizing: border-box;height: 80px;}
-.b_mod_partners .b_part > div img{max-width: 90%;max-height: 90%}
+.b_mod_partners .b_part > div img{max-width: 90%;max-height: 60%}
 .b_mod_partners .b_part > div:nth-child(-n + 5){margin-bottom: 20px}
 .b_mod_partners .b_part > div:nth-child(5n){margin-right: 0}
 
@@ -1261,7 +1261,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     
     .sp_mod_history{display: block;}
     .sp_mod_history .tabs{width: 100%;padding: 4rem 20px;}
-    .sp_mod_history .tabs li{margin: 0;width: 100%;}
+    .sp_mod_history .tabs li{margin-bottom: 1rem;width: 100%;}
     .sp_mod_history .tabs li.active{margin-bottom: 2rem}
     .sp_mod_history > div{padding: 4rem 20px;width: 100%;}
     
