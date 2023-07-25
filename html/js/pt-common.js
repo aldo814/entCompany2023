@@ -449,6 +449,163 @@ $(document).ready(function () {
           },
         }
     });
+    
+     $('.sp_mod_history02 .history:first').show();
+    $(".sp_mod_history02 .tabs li a").click(function () {
+        var tab_id = $(this).attr("data-tab");
+        $(this).parent().siblings().removeClass("active");
+        $(this).parent().addClass("active");
+        $(this).parent().parent().parent().parent().find(".history").hide();
+        $("#" + tab_id).fadeIn();
+        
+    });
+    
+     $('.sp_mod_biz02 .bizDiv').slick({
+        slidesToShow: 4,
+        arrows: true,
+        dots:false,
+        responsive: [
+            {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+
+                    }
+                        },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+
+                    }
+                        },
+            {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+
+                    }
+                        },
+            
+                    ]
+
+    });
+    
+    var swiper = new Swiper(".sp_mod_comview02 .img_wrap", {
+        slidesPerView: 1,
+        arrows:false,
+      pagination : { // 페이징 설정
+		el : '.swiper-pagination',
+		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+	},
+    });
+    
+     var helpers = {
+	addZeros: function (n) {
+		return (n < 10) ? '0' + n : '' + n;
+	}
+};
+function sliderInit() {
+    var $slider = $('.sp_mod_product02 .product');
+  $slider.each(function() {
+    var $sliderParent = $(this).parent();
+       $(this).slick({
+        slidesToShow: 1,
+        arrows: true,
+        dots:false,
+        infinite:true
+
+    });
+    
+    if ($(this).find('.item').length > 1) {
+      $(this).siblings('.slides-numbers').show();
+    }
+
+    $(this).on('afterChange', function(event, slick, currentSlide){
+      $sliderParent.find('.slides-numbers .active').html(helpers.addZeros(currentSlide + 1));
+    });
+
+    var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
+    $sliderParent.find('.slides-numbers .total').html(helpers.addZeros(sliderItemsNum));
+      
+  });
+
+  }
+    
+    sliderInit();
+    
+    
+    $('.fin_wrap').slick({
+        slidesToShow: 2,
+        arrows: true,
+        dots:false,
+        responsive: [
+            {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+
+                    }
+                        },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+
+                    }
+                        }
+                    ]
+
+    });
+    
+    
+     $('.sp_mod_culture02 .culwel_wrap').slick({
+        rows: 2,
+    slidesPerRow: 3,
+        arrows: true,
+        dots:false,
+        responsive: [
+            {
+                    breakpoint: 1024,
+                    settings: {
+                        rows: 1,
+    slidesPerRow: 3,
+
+                    }
+                        },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        rows: 1,
+    slidesPerRow: 2,
+
+                    }
+                        },
+             {
+                    breakpoint: 480,
+                    settings: {
+                        rows: 1,
+    slidesPerRow: 1,
+
+                    }
+                        }
+                    ]
+
+    });
+
+                  
+                  
+    
+    $('.sp02_mod_strategy .guide_wrap').slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots:true,
+
+    });
+    
+    $('.sp_mod02_finance .top').click(function(){
+        $(this).find('span').toggle();
+    })
   
 
 
