@@ -1455,6 +1455,10 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp_mod_grade03 .grade .right{width: 100%}
     
     .new_com_mod_header.sty02.fixed  .action{left: auto;transform: none;right: 0;}
+    
+    .sp_mod02_finance .fin_wrap{padding: 0 50px;}
+    .sp_mod02_finance .slick-prev{left: 0}
+    .sp_mod02_finance .slick-next{right: 15px}
 }
 
 @media all and (max-width:999px){
