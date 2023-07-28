@@ -1645,6 +1645,11 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp03_mod_emp .salary > div{display: flex;padding-left: 0 !important;justify-content: center;}
     .sp03_mod_emp .salary > div:before{position: static !important;margin-right: 3rem}
     
+    .sp_mod02_finance .fin_wrap.slick-slider > div{margin: 0}
+    
+    .sp_mod02_finance .fin_wrap.slick-slider .slick-slide{margin: 0}
+    .sp_mod02_finance .slick-next{right: 0}
+    
 }
 
 
