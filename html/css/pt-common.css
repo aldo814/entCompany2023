@@ -1988,7 +1988,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp03_mod_emp .join_chart svg > g{width: 100% !important}
     
     .new_com_mod_header.sty02.fixed .action{display: block;}
-    .new_com_mod_header .action a{width: auto}
+    .new_com_mod_header.fixed .action a{width: auto}
     .new_com_mod_header .action a + a{margin-left: 0;margin-top: 1rem}
     .sp_rep_Img_wrap .item .txt .bigTit{font-size: 3rem;}
     .sp_rep_Img_wrap .item .txt .bigTit span:before{background-size: 40px;width: 40px;height: 38px;top: -20px}
@@ -1997,4 +1997,5 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp03_mod_basic .box dl{font-size: 1.8rem}
     .sp03_mod_basic .box dl.w100 dt{width: 60px;}
     .sp03_mod_basic .box dd{width: calc(100% - 70px)}
+    .bg_white .list{padding: 2rem}
 }
