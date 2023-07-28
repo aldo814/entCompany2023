@@ -1521,7 +1521,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp02_mod_talent .txt .inner{max-width: 480px;width: calc(100% - 20px)}
     
     .new_com_mod_header.sty02 .action{display: flex;justify-content: center;}
-    .new_com_mod_header .action a{font-size: 1.4rem;display: flex;align-items: center;width: 111px}
+    .new_com_mod_header .action a{font-size: 1.4rem;display: flex;align-items: center;width: 130px}
     .new_com_mod_header .action a + a{margin-left: 15px}
     
     
@@ -1988,6 +1988,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp03_mod_emp .join_chart svg > g{width: 100% !important}
     
     .new_com_mod_header.sty02.fixed .action{display: block;}
+    .new_com_mod_header .action a{width: auto}
     .new_com_mod_header .action a + a{margin-left: 0;margin-top: 1rem}
     .sp_rep_Img_wrap .item .txt .bigTit{font-size: 3rem;}
     .sp_rep_Img_wrap .item .txt .bigTit span:before{background-size: 40px;width: 40px;height: 38px;top: -20px}
