@@ -605,8 +605,34 @@ function sliderInit() {
     
     $('.sp_mod02_finance .top').click(function(){
         $(this).find('span').toggle();
-    })
+    });
+    
+    $('.sp_rep_Img03').slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots:true,
+       autoplay: true,
+    autoplaySpeed: 5000,
+        
+    });
+    
+     $('.sp_rep_Img_wrap .slick-dots').append('<li class="start_wrap"><button class="play">시작</button></li><li class="stop_wrap"><button class="stop">정지</button></li>');
+    
+    $('.sp_rep_Img03 .play').click(function(){
+    $('.sp_rep_Img03').slick('slickPlay');
+      $('.stop_wrap').show()
+    $('.start_wrap').hide();
+       
+});
+
+$('.sp_rep_Img03 .stop').click(function(){
+    $('.sp_rep_Img03').slick('slickPause');
+     $('.stop_wrap').hide()
+    $('.start_wrap').css('display','inline-block');
+});
   
+    
+   
 
 
 });
