@@ -1375,13 +1375,13 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp03_mod_emp .salary{display: flex;justify-content:space-between;margin-bottom: 4rem;;align-items: flex-end}
 .sp03_mod_emp .salary > div{position: relative;}
 .sp03_mod_emp .salary > div h4{font-weight: 500;font-size: 2rem;}
-.sp03_mod_emp .salary > div p{display: flex;align-items: flex-end;font-size: 3rem;font-weight: bold;color: #013281;}
-.sp03_mod_emp .salary > div p span{font-size: 2rem;color: rgba(0, 0, 0, 0.6);margin-left:1rem;font-weight: 400}
+.sp03_mod_emp .salary > div p{display: flex;align-items: flex-end;font-size: 3.6rem;font-weight: bold;color: #4167ff;}
+.sp03_mod_emp .salary > div p span{font-size: 1.6rem;color: rgba(0, 0, 0, 0.6);margin-left:1rem;font-weight: 400}
 .sp03_mod_emp .salary > div:nth-child(1):before{content: '';display: block;background: url(../images/sp03_sl01.png) no-repeat;width: 91px;height: 81px;position: absolute;left: 0;bottom: 0;}
 .sp03_mod_emp .salary > div:nth-child(1){padding-left: 111px;}
-.sp03_mod_emp .salary > div:nth-child(1) h4{font-size: 1.6rem;}
-.sp03_mod_emp .salary > div:nth-child(1) p{font-size: 3.2rem;}
-.sp03_mod_emp .salary > div:nth-child(1) p span{font-size: 1.4rem;}
+.sp03_mod_emp .salary > div:nth-child(1) h4{font-size: 2rem;}
+.sp03_mod_emp .salary > div:nth-child(1) p{font-size: 3.6rem;}
+.sp03_mod_emp .salary > div:nth-child(1) p span{font-size: 1.6rem;}
 .sp03_mod_emp .salary > div:nth-child(2):before{content: '';display: block;background: url(../images/sp03_sl02.png) no-repeat;width: 90px;height: 66px;position: absolute;left: 0;bottom: 0}
 .sp03_mod_emp .salary > div:nth-child(2){padding-left: 110px;}
 .sp03_mod_emp .salary > div:nth-child(3):before{content: '';display: block;background: url(../images/sp03_sl03.png) no-repeat;width: 82px;height: 64px;position: absolute;left: 0;bottom: 0}
