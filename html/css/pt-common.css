@@ -55,13 +55,14 @@ a{color: inherit;text-decoration: none}
 .gray_bg{padding: 7rem 0;padding-top:200px;box-sizing: border-box;background: #f5f5f5}
 
 .sp_mod_product .product{display: flex;flex-wrap: wrap;}
-.sp_mod_product .product .item{width: calc(25% - 22.5px);margin-right: 30px;border-radius: 10px;overflow: hidden;margin-top: 30px;height: 300px;background-size: cover;background-position: center;transition: all 0.3s}
+.sp_mod_product .product .item{width: calc(25% - 22.5px);margin-right: 30px;overflow: hidden;margin-top: 30px;background-size: cover;background-position: center;transition: all 0.3s}
+.sp_mod_product .product .item .imgFill{width: 100%;height: 300px;transition: all 0.3s;background-size: cover;border-radius: 10px;}
 .sp_mod_product .product .item:nth-child(4n){margin-right: 0}
 .sp_mod_product .product .item:nth-child(-n + 4){margin-top: 0;}
-.sp_mod_product .product .item img{display: block;width: 100%;}
-.sp_mod_product .product .item:hover,
-.sp_mod_product .product .item:active,
-.sp_mod_product .product .item:focus{height: 360px;margin-top: -30px}
+.sp_mod_product .product .item:hover .imgFill,
+.sp_mod_product .product .item:active .imgFill,
+.sp_mod_product .product .item:focus .imgFill{height: 360px;margin-top: -30px}
+.sp_mod_product .product p{text-align: center;margin-top: 1.5rem;}
 
 /* ----  header ---- */
 .new_com_mod_header{padding: 40px 0;background: #fff}
@@ -1101,7 +1102,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 
 .sp_mod_swot .swot_wrap{display: flex;flex-wrap: wrap;}
 .sp_mod_swot .swot_wrap > div {width: calc(50% - 20px);margin-right: 40px;display: flex;align-items: center;margin-top: 40px}
-.sp_mod_swot .swot_wrap  div.diagram_area{width: 160px;height: 160px;border: 1px solid #18479c;position: relative;margin-right: 30px;box-shadow: 0 2px 0  #18479c;border-radius: 5px}
+.sp_mod_swot .swot_wrap  div.diagram_area{width: 160px;height: 160px;border: 1px solid #18479c;position: relative;margin-right: 30px;box-shadow: 0 2px 0  #18479c;border-radius: 5px;background: #fff}
 .sp_mod_swot .swot_wrap  .diagram_area p{position: absolute;width: 100%;text-align: center;top: 50%;transform: translateY(-50%);font-size: 1.8rem;}
 .sp_mod_swot .swot_wrap .txt{width: calc(100% - 190px)}
 .sp_mod_swot .swot_wrap .tit {font-size: 2.0rem;margin-bottom: .5rem}
@@ -1377,14 +1378,17 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp03_mod_emp .salary > div h4{font-weight: 500;font-size: 2rem;}
 .sp03_mod_emp .salary > div p{display: flex;align-items: flex-end;font-size: 3.6rem;font-weight: bold;color: #4167ff;}
 .sp03_mod_emp .salary > div p span{font-size: 1.6rem;color: rgba(0, 0, 0, 0.6);margin-left:1rem;font-weight: 400}
-.sp03_mod_emp .salary > div:nth-child(1):before{content: '';display: block;background: url(../images/sp03_sl03.png) no-repeat;width: 91px;height: 81px;position: absolute;left: 0;bottom: 0;}
+.sp03_mod_emp.sp03Emp .salary > div:nth-child(1):before{content: '';display: block;background: url(../images/sp03_sl03.png) no-repeat;width: 91px;height: 81px;position: absolute;left: 0;bottom: 0;}
+.sp03_mod_emp .salary > div:nth-child(1):before{content: '';display: block;background: url(../images/spp03_sl01.png) no-repeat;width: 91px;height: 81px;position: absolute;left: 0;bottom: 0;}
 .sp03_mod_emp .salary > div:nth-child(1){padding-left: 111px;}
 .sp03_mod_emp .salary > div:nth-child(1) h4{font-size: 2rem;}
 .sp03_mod_emp .salary > div:nth-child(1) p{font-size: 3.6rem;}
 .sp03_mod_emp .salary > div:nth-child(1) p span{font-size: 1.6rem;}
-.sp03_mod_emp .salary > div:nth-child(2):before{content: '';display: block;background: url(../images/sp03_sl02.png) no-repeat;width: 90px;height: 66px;position: absolute;left: 0;bottom: 0}
+.sp03_mod_emp.sp03Emp .salary > div:nth-child(2):before{content: '';display: block;background: url(../images/sp03_sl02.png) no-repeat;width: 90px;height: 68px;position: absolute;left: 0;bottom: 0}
+.sp03_mod_emp .salary > div:nth-child(2):before{content: '';display: block;background: url(../images/spp03_sl02.png) no-repeat;width: 90px;height: 66px;position: absolute;left: 0;bottom: 0}
 .sp03_mod_emp .salary > div:nth-child(2){padding-left: 110px;}
-.sp03_mod_emp .salary > div:nth-child(3):before{content: '';display: block;background: url(../images/sp03_sl01.png) no-repeat;width: 82px;height: 64px;position: absolute;left: 0;bottom: 0}
+.sp03_mod_emp.sp03Emp .salary > div:nth-child(3):before{content: '';display: block;background: url(../images/sp03_sl01.png) no-repeat;width: 82px;height: 64px;position: absolute;left: 0;bottom: 0}
+.sp03_mod_emp .salary > div:nth-child(3):before{content: '';display: block;background: url(../images/spp03_sl03.png) no-repeat;width: 82px;height: 64px;position: absolute;left: 0;bottom: 0}
 .sp03_mod_emp .salary > div:nth-child(3){padding-left: 102px}
 .sp03_mod_emp .salary_wrap > p{font-size: 1.4rem;color: rgba(0, 0, 0, 0.8)}
 
@@ -1532,6 +1536,9 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     
     .b_rep_Img{height: 570px}
     .b_rep_Img .img{height: 450px;}
+    
+    .header .biz_cate,
+    .header .top_cert{display: none}
 }
 
 @media all and (max-width:999px){
@@ -1654,10 +1661,10 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp_mod_product .product .item{width: calc(50% - 7.5px);}
     .sp_mod_product .product .item:nth-child(2n){margin-right: 0}
     .sp_mod_product .product .item:nth-child(-n + 2){margin-bottom: 15px}
-    .sp_mod_product .product .item{height: 200px}
-    .sp_mod_product .product .item:hover,
-    .sp_mod_product .product .item:active,
-    .sp_mod_product .product .item:focus{height:200px;margin-top: 0}
+    .sp_mod_product .product .item .imgFill{height: 200px}
+    .sp_mod_product .product .item:hover .imgFill,
+    .sp_mod_product .product .item:active .imgFill,
+    .sp_mod_product .product .item:focus .imgFill{height:200px;margin-top: 0}
     
     .sp_vision_wrap .avw{display: block;}
     .sp_vision_wrap .avw .item{margin-bottom: 3rem}
