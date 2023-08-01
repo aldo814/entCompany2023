@@ -873,7 +873,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_content .content .list .item .ico{width: 90px;height: 90px;display: flex;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.8);position: absolute;left: -45px;top: 50%;border-radius: 50%;transform: translateY(-50%);box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.18)}
 .sp_mod_content .content .list .item:last-child{margin-bottom: 0}
 .sp_mod_content .content .list .item .q{font-size: 2.2rem;font-weight: 
-500;margin-bottom: 1.5rem;color: #25dede;text-transform: uppercase;padding-left: 30px;position: relative;}
+500;margin-bottom: 1.5rem;color: #25dede;text-transform: uppercase;padding-left: 30px;position: relative;max-width: calc(100% - 60px)}
 .sp_mod_content .content .list .item .q:before{content: 'Q.';display: block;position: absolute;left: 0;top: 0}
 .sp_mod_content .content .list .item .desc{font-weight: 500;text-transform: uppercase; text-overflow: ellipsis;overflow: hidden;word-break: break-word; display: -webkit-box;
    -webkit-line-clamp: 2;
@@ -1725,7 +1725,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp03_mod_emp .salary > div{display: flex;padding-left: 0 !important;justify-content: center;}
     .sp03_mod_emp .salary > div:before{position: static !important;margin-right: 3rem}
     
-    .sp_mod02_finance .fin_wrap.slick-slider > div{margin: 0}
+    .sp_mod02_finance .fin_wrap.slick-slider > div{margin-left: 0}
     
     .sp_mod02_finance .fin_wrap.slick-slider .slick-slide{margin: 0}
     .sp_mod02_finance .slick-next{right: 0}
