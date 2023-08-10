@@ -678,6 +678,35 @@ $(document).ready(function () {
                 settings: {}
     }]
     });
+    
+     var heightArray = $(".sp04_mod_product .item").map(function () {
+
+        return $(this).height();
+
+    }).get();
+
+    var maxHeight = Math.max.apply(Math, heightArray);
+
+    $(".sp04_mod_product .item").height(maxHeight);
+    
+     $('.sp04_mod_keyValue .kv').slick({
+    rows: 3,
+    slidesPerRow: 1,
+    arrows: false,
+    dots:true,
+    infinite:true
+  });
+    
+    
+    $('.sp04_mod_emp .chart-container .bar').each(function(){
+       var height = $(this).find('p').outerHeight();
+         $(this).find('p').css('top',-height - 70)
+    });
+    
+    $('.sp04_mod_finance .dti a').click(function(){
+        $(this).find('p').toggle();
+    })
+
 
 });
 
