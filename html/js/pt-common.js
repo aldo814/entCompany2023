@@ -645,38 +645,37 @@ $(document).ready(function () {
     });
 
 
-    
-    var heightArray = $(".sp_mod_biz04 .txt").map( function(){ 
 
-             return  $(this).height(); 
+    var heightArray = $(".sp_mod_biz04 .txt").map(function () {
 
-    }).get(); 
+        return $(this).height();
 
-  var maxHeight = Math.max.apply( Math, heightArray); 
+    }).get();
 
- $(".sp_mod_biz04 .txt").height(maxHeight); 
+    var maxHeight = Math.max.apply(Math, heightArray);
+
+    $(".sp_mod_biz04 .txt").height(maxHeight);
 
 
- var swiper = new Swiper(".sp_mod_comview04 .img_wrap", {
+    var swiper = new Swiper(".sp_mod_comview04 .img_wrap", {
         slidesPerView: 1,
         arrows: false,
         pagination: {
             el: ".swiper-pagination",
         }
- });
-    
-    
-     $('.sp04_mod_product .product').slick({
+    });
+
+
+    $('.sp04_mod_product .product').slick({
         slidesToShow: 5,
         arrows: true,
         dots: false,
-         centerMode: true,
-  centerPadding: '20px',
-          responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-      }
+        centerMode: true,
+        centerPadding: '100px',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {}
     }]
     });
 
