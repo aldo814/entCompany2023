@@ -628,6 +628,29 @@ $(document).ready(function () {
         slidesToShow: 6,
         arrows: true,
         dots: false,
+         responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+
+                }
+                        },
+             {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+
+                }
+                        },
+             {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+
+                }
+                        },
+             ]
     });
 
     $('.sp_rep_Img03 .stop').click(function () {
@@ -642,6 +665,15 @@ $(document).ready(function () {
         slidesToShow: 3,
         arrows: true,
         dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+
+                }
+                        },
+            ]
     });
 
 
@@ -674,9 +706,28 @@ $(document).ready(function () {
         centerPadding: '100px',
         responsive: [
             {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+
+                }
+                        },
+            {
                 breakpoint: 768,
-                settings: {}
-    }]
+                settings: {
+                    slidesToShow: 2,
+
+                }
+                        },
+             {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '50px',
+
+                }
+                        },
+            ]
     });
     
      var heightArray = $(".sp04_mod_product .item").map(function () {
@@ -705,12 +756,57 @@ $(document).ready(function () {
     
     $('.sp04_mod_finance .dti a').click(function(){
         $(this).find('p').toggle();
-    })
+    });
+    
+    
+     $('.piechart').easyPieChart({
+    scaleColor: "transparent",
+    lineWidth: 13,
+    lineCap: 'butt', //Can be butt
+    barColor: '#293991',
+    trackColor:	"#fff",
+    size: 145,
+    rotate: 0,    
+    animate: 1000,
+    
+  });
+    $('.piechart_g').easyPieChart({
+    scaleColor: "transparent",
+    lineWidth: 13,
+    lineCap: 'butt', //Can be butt
+    barColor: '#cccccc',
+    trackColor:	"#fff",
+    size: 90,
+    rotate: 0,    
+    animate: 1000,
+    
+  });
+    
+     var msnry = new Masonry( '.sp04_mod_culture .culwel_wrap', {
+  itemSelector: '.item',
+        columnWidth: '.item',
+        percentPosition: true
+});
 
+
+    
+    $('.sp_mod_comview04 .item img').each(function(){
+        var height1 = $('.sp_mod_comview04 .item img:nth-child(1)').outerHeight();
+        var height2 = $('.sp_mod_comview04 .item img:nth-child(2)').outerHeight();
+        
+        $('.sp_mod_comview04 .item').css('height',height1+height2 + 69)
+    })
 
 });
 
 $(window).resize(function () {
+     $('.sp_mod_comview04 .item img').each(function(){
+        var height1 = $('.sp_mod_comview04 .item img:nth-child(1)').outerHeight();
+        var height2 = $('.sp_mod_comview04 .item img:nth-child(2)').outerHeight();
+        
+        $('.sp_mod_comview04 .item').css('height',height1+height2 + 69)
+    })
+    
     if (window.innerWidth > 999) {
 
         /* 스크립트내용*/
