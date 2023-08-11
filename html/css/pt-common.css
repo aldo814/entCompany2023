@@ -2199,7 +2199,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     
     .sp04_mod_emp .sequel > div{padding: 2rem}
     
-    .sp04_mod_emp .chart-container{width: calc(100% - 100px) }
+    .sp04_mod_emp .chart-container{width: 100%;margin-left:0;margin-top: 25rem}
+    .sp04_mod_emp .meter li > div{left: 0;background: #f7f7f7;padding-right: 1rem}
     .sp04_mod_emp .base{width: 768px;}
     .sp04_mod_emp .one{left: 30%}
     .sp04_mod_emp .two{left: 70%}
