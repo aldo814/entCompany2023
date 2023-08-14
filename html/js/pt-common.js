@@ -537,6 +537,8 @@ $(document).ready(function () {
 
     $('.fin_wrap').slick({
         slidesToShow: 2,
+        slidesToScroll: 2,
+        setPosition: 0,
         arrows: true,
         dots: false,
         responsive: [

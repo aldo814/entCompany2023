@@ -733,7 +733,7 @@
                                     <span><strong>19</strong>%</span>
                                 </div>
                             </div>
-                            <div class="chart" id="capital"></div>
+                            <div class="chart" id="capital022"></div>
 
                             <ul id="legend04"></ul>
                         </div>
@@ -795,7 +795,25 @@
                                     <span><strong>19</strong>%</span>
                                 </div>
                             </div>
-                            <div class="chart" id="ratio"></div>
+                            <div class="chart" id="ratio02"></div>
+
+                            <ul id="legend06"></ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="top">자기자본비율 <a href="javascript:void()">ⓘ<span>자기자본비율</span></a> </div>
+                        <div class="bottom">
+                            <div class="info">
+                                <div>
+                                    <p>2020년 기준</p>
+                                    <span><strong>3</strong>%</span>
+                                </div>
+                                <div class="up">
+                                    <p>업종 평균대비</p>
+                                    <span><strong>19</strong>%</span>
+                                </div>
+                            </div>
+                            <div class="chart" id="ratio022"></div>
 
                             <ul id="legend06"></ul>
                         </div>
@@ -839,7 +857,7 @@
                                     <span><strong>19</strong>%</span>
                                 </div>
                             </div>
-                            <div class="chart" id="capital02"></div>
+                            <div class="chart" id="capital023"></div>
 
                             <ul id="legend08"></ul>
                         </div>
@@ -1660,7 +1678,7 @@
         });
 
 
-        var chart5 = bb.generate({
+        var chart1 = bb.generate({
             bindto: "#profit",
             data: {
                 type: "bar",
@@ -1709,7 +1727,7 @@
             }
         });
 
-        var chart5 = bb.generate({
+        var chart2 = bb.generate({
             bindto: "#debt",
             data: {
                 type: "bar",
@@ -1758,7 +1776,7 @@
             }
         });
 
-        var chart5 = bb.generate({
+        var chart3 = bb.generate({
             bindto: "#ratio",
             data: {
                 type: "bar",
@@ -1806,9 +1824,209 @@
                 }
             }
         });
+        
+        
+        var chart4 = bb.generate({
+            bindto: "#ratio02",
+            data: {
+                type: "bar",
+                columns: [
+                    ["업종평균", 1550, 1550, 1550],
+                    ["당사", 3103, 2920, 2767],
+                ],
+                colors: {
+                    업종평균: "#d5d5d5",
+                    당사: "#0098ff",
+                }
+            },
+            padding: {
+                top: 20,
+                left: 0
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [2021, 2020, 2019],
+                    padding: {
+                        left: .2,
+                        right: .2
+                    }
+                }
+            },
+            bar: {
+                width: {
+                    max: 20
+                },
+                padding: 5,
+            },
+            legend: {
+                contents: {
+                    bindto: "#legend06",
+                    template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+                }
+            }
+        });
+        
+        
+        var chart5 = bb.generate({
+            bindto: "#ratio022",
+            data: {
+                type: "bar",
+                columns: [
+                    ["업종평균", 1550, 1550, 1550],
+                    ["당사", 3103, 2920, 2767],
+                ],
+                colors: {
+                    업종평균: "#d5d5d5",
+                    당사: "#0098ff",
+                }
+            },
+            padding: {
+                top: 20,
+                left: 0
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [2021, 2020, 2019],
+                    padding: {
+                        left: .2,
+                        right: .2
+                    }
+                }
+            },
+            bar: {
+                width: {
+                    max: 20
+                },
+                padding: 5,
+            },
+            legend: {
+                contents: {
+                    bindto: "#legend06",
+                    template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+                }
+            }
+        });
+
 
         var chart6 = bb.generate({
             bindto: "#capital02",
+            data: {
+                type: "bar",
+                columns: [
+                    ["업종평균", 1550, 1550, 1550],
+                    ["당사", 3103, 2920, 2767],
+                ],
+                colors: {
+                    업종평균: "#d5d5d5",
+                    당사: "#0098ff",
+                }
+            },
+            padding: {
+                top: 20,
+                left: 0
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [2021, 2020, 2019],
+                    padding: {
+                        left: .2,
+                        right: .2
+                    }
+                }
+            },
+            bar: {
+                width: {
+                    max: 20
+                },
+                padding: 5,
+            },
+            legend: {
+                contents: {
+                    bindto: "#legend08",
+                    template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+                }
+            }
+        });
+        
+        
+        var chart7 = bb.generate({
+            bindto: "#capital023",
+            data: {
+                type: "bar",
+                columns: [
+                    ["업종평균", 1550, 1550, 1550],
+                    ["당사", 3103, 2920, 2767],
+                ],
+                colors: {
+                    업종평균: "#d5d5d5",
+                    당사: "#0098ff",
+                }
+            },
+            padding: {
+                top: 20,
+                left: 0
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    categories: [2021, 2020, 2019],
+                    padding: {
+                        left: .2,
+                        right: .2
+                    }
+                }
+            },
+            bar: {
+                width: {
+                    max: 20
+                },
+                padding: 5,
+            },
+            legend: {
+                contents: {
+                    bindto: "#legend08",
+                    template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+                }
+            }
+        });
+        
+        var chart6 = bb.generate({
+            bindto: "#capital022",
             data: {
                 type: "bar",
                 columns: [
@@ -2030,9 +2248,38 @@
             }
         });
         
-        setTimeout(function() {
+          
+             setTimeout(function() {
+                chart1.resize();
+                chart2.resize();
+                chart3.resize();
+                chart4.resize();
                 chart5.resize();
+                chart6.resize();
             }, 100);
+             
+        
+        
+        
+        $(window).load(function () {
+        
+          
+          
+            
+        $('.fin_wrap .slick-arrow').click(function(){
+        setTimeout(function() {
+                chart1.resize();
+                chart2.resize();
+                chart3.resize();
+                chart4.resize();
+                chart5.resize();
+                chart6.resize();
+            }, 100);
+            $('.fin_wrap ').resize();
+             $('.fin_wrap ').slick('refresh');
+            });
+            
+        });
 
     </script>
 
