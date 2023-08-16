@@ -1151,10 +1151,9 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod02_finance .item h4{font-size: 2.2rem;}
 .sp_mod02_finance .item p{font-size: 1.6rem;color: #666666;}
 .sp_mod02_finance .fin_wrap{display: flex;margin-top: 2rem;justify-content: space-between}
-.sp_mod02_finance .fin_wrap > div{width: calc(50% - 15px);}
 .sp_mod02_finance .fin_wrap .top{background: #0098ff;padding: 2rem 3rem;color: #fff;font-size: 1.8rem;box-sizing: border-box;}
 .sp_mod02_finance .fin_wrap .bottom{padding: 3rem 2rem;box-sizing: border-box;background: #fff;}
-.sp_mod02_finance .fin_wrap .info{border: 1px solid #aeaeae;padding: 3rem 6rem;display: flex;justify-content: center;}
+.sp_mod02_finance .fin_wrap .info{border: 1px solid #aeaeae;padding: 3rem 5rem;display: flex;justify-content: center;}
 .sp_mod02_finance .fin_wrap .info > div{padding-right: 7rem;}
 .sp_mod02_finance .fin_wrap .info > div:last-child{padding-left: 7rem;border-left:1px solid #aeaeae;padding-right: 0}
 .sp_mod02_finance .fin_wrap .info .up span{color: #ec3219;position: relative;display: flex;justify-content: center;align-items: center;}
@@ -1182,14 +1181,18 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod02_finance .bb-legend-item{font-size: 1.4rem;color: #666;font-family: 'Noto Sans KR'}
 .sp_mod02_finance ul {display: flex;justify-content: center;}
 .sp_mod02_finance ul li + li{margin-left: 4rem}
-.sp_mod02_finance .fin_wrap.slick-slider > div{width: 100%;margin: 0 -15px;padding-top: 100px;margin-top: -100px}
-.sp_mod02_finance .fin_wrap.slick-slider .slick-slide{margin: 0 15px}
+.sp_mod02_finance .fin_wrap .slick-track{display: flex;}
+.sp_mod02_finance .fin_wrap.slick-slider .slick-slide{height: auto;margin: 0 15px;}
+.sp_mod02_finance .fin_wrap.slick-slider .slick-slide > div{height: 100%;}
+.sp_mod02_finance .fin_wrap.slick-slider .slick-slide > div > div{height: 100%}
+.sp_mod02_finance .fin_wrap .slick-list {margin: 0 -15px;padding-top: 100px;margin-top: -100px}
+.sp_mod02_finance .fin_wrap .bottom{height: calc(100%)}
 .sp_mod02_finance .top a{position: relative;}
 .sp_mod02_finance .chart {width: calc(100% + 90px)}
 .sp_mod02_finance .chart svg{width: 100% !important}
 .sp_mod02_finance .top a span{display: block;background: #fff;color: #333;font-size: 1.4rem;padding: 1.5rem;position: absolute;left: -25px;bottom: 23px;width: 340px;border: 1px solid #565d79;z-index: 555;display: none}
 .sp_mod02_finance .top a span:before{content: '';display: block;background: url(../images/spbottom.png) no-repeat;width: 9px;height: 6px;left: 30px;bottom: -6px;position: absolute;}
-.sp02_mod_percent{display: flex;background: #fff;padding: 4rem;margin-top: 7rem;justify-content: space-between}
+.sp02_mod_percent{display: flex;background: #fff;padding: 4rem;margin-top: 7rem;justify-content: space-between;box-sizing: border-box}
 .sp02_mod_percent > div{width: calc(50% - 50px)}
 .sp02_mod_percent .bb-axis-y{display: block;font-size: 1.4rem;font-family: 'Noto Sans KR'}
 .sp02_mod_percent .bb-axis-y path{display: none}
@@ -1375,23 +1378,19 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_grade03 .right ul .active:nth-of-type(5) {background: url(../images/grade_blue02.png) no-repeat;width: 127px;height: 153px;font-size: 2.4rem;font-weight: 500}
 .sp_mod_grade03 .right p{font-size: 7.2rem;text-align: center;font-weight: bolder}
 .sp03_mod_emp .salary_wrap{border: 1px solid #dddddd;padding: 5rem 2rem 2rem 2rem;margin-bottom: 7rem}
-.sp03_mod_emp .salary{display: flex;justify-content:space-around;margin-bottom: 4rem;;align-items: flex-end}
-.sp03_mod_emp .salary > div{position: relative;}
+.sp03_mod_emp .salary{display: flex;margin-bottom: 4rem;;align-items: flex-end}
+.sp03_mod_emp .salary > div{position: relative;text-align: center;width: 33.333%;}
+.sp03_mod_emp .salary > div + div {border-left: 1px solid #dddddd}
 .sp03_mod_emp .salary > div h4{font-weight: 500;font-size: 2rem;}
-.sp03_mod_emp .salary > div p{display: flex;align-items: flex-end;font-size: 3.6rem;font-weight: bold;color: #4167ff;}
+.sp03_mod_emp .salary > div p{display: flex;align-items: flex-end;font-size: 3.6rem;font-weight: bold;color: #4167ff;justify-content: center}
 .sp03_mod_emp .salary > div p span{font-size: 1.6rem;color: rgba(0, 0, 0, 0.6);margin-left:1rem;font-weight: 400}
-.sp03_mod_emp.sp03Emp .salary > div:nth-child(1):before{content: '';display: block;background: url(../images/sp03_sl03.png) no-repeat;width: 91px;height: 81px;position: absolute;left: 0;bottom: 0;}
-.sp03_mod_emp .salary > div:nth-child(1):before{content: '';display: block;background: url(../images/spp03_sl01.png) no-repeat;width: 91px;height: 81px;position: absolute;left: 0;bottom: 0;}
-.sp03_mod_emp .salary > div:nth-child(1){padding-left: 111px;}
+.sp03_mod_emp.sp03Emp .salary > div:nth-child(1):after{content: '';display: block;background: url(../images/sp03_sl01.png) no-repeat;width: 172px;height: 67px;margin: 3rem auto 0 auto;}
+.sp03_mod_emp .salary > div:nth-child(1):after{content: '';display: block;background: url(../images/spp03_sl01.png) no-repeat;width: 91px;height: 81px;}
 .sp03_mod_emp .salary > div:nth-child(1) h4{font-size: 2rem;}
 .sp03_mod_emp .salary > div:nth-child(1) p{font-size: 3.6rem;}
 .sp03_mod_emp .salary > div:nth-child(1) p span{font-size: 1.6rem;}
-.sp03_mod_emp.sp03Emp .salary > div:nth-child(2):before{content: '';display: block;background: url(../images/sp03_sl02.png) no-repeat;width: 90px;height: 68px;position: absolute;left: 0;bottom: 0}
-.sp03_mod_emp .salary > div:nth-child(2):before{content: '';display: block;background: url(../images/spp03_sl02.png) no-repeat;width: 90px;height: 66px;position: absolute;left: 0;bottom: 0}
-.sp03_mod_emp .salary > div:nth-child(2){padding-left: 110px;}
-.sp03_mod_emp.sp03Emp .salary > div:nth-child(3):before{content: '';display: block;background: url(../images/sp03_sl01.png) no-repeat;width: 82px;height: 64px;position: absolute;left: 0;bottom: 0}
-.sp03_mod_emp .salary > div:nth-child(3):before{content: '';display: block;background: url(../images/spp03_sl03.png) no-repeat;width: 82px;height: 64px;position: absolute;left: 0;bottom: 0}
-.sp03_mod_emp .salary > div:nth-child(3){padding-left: 102px}
+.sp03_mod_emp.sp03Emp .salary > div:nth-child(2):after{content: '';display: block;background: url(../images/sp03_sl02.png) no-repeat;width: 163px;height: 68px;margin: 3rem auto 0 auto;}
+.sp03_mod_emp.sp03Emp .salary > div:nth-child(3):after{content: '';display: block;background: url(../images/sp03_sl03.png) no-repeat;width: 138px;height: 68px;margin: 3rem auto 0 auto;}
 .sp03_mod_emp .salary_wrap > p{font-size: 1.4rem;color: rgba(0, 0, 0, 0.8)}
 
 .sp03_mod_emp .bb-axis-x text{font-family: 'Noto Sans KR';font-size: 1.6rem;font-weight: 500}
@@ -1824,7 +1823,14 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp04_mod_process .item .txt{width: calc(100% - 260px);margin-left: 100px;}
 .sp04_mod_process .item .txt strong{font-size: 1.4rem;padding: 1px 7px;background: #293991;border-radius: 30px;font-weight: 300;color: #fff}
 .sp04_mod_process .item .txt h4{margin: 0.5rem 0 1rem 0;font-size: 2.4rem;}
-.sp04_mod_process .item .txt p{}
+
+.sp_rep_Img05{background-size: cover !important;position: relative;height: 600px;}
+.sp_rep_Img05 .txt{text-align: center;color: #fff;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%)}
+.sp_rep_Img05 .txt .subTit{font-size: 3rem;}
+.sp_rep_Img05 .txt .subTit:after{content: '';display: block;;width: calc(100% + 60px);margin: 10px auto;height: 1px;background: rgba(255, 255, 255, 0.6);margin-left: -30px;}
+.sp_rep_Img05 .txt .bigTit{font-size: 6rem}
+
+
 
 @media all and (max-width:1260px){
     .new_com_mod_header .header .imgCi{margin-right: 50px;max-width: 180px}
@@ -2145,9 +2151,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp_mod_history03 .history > div > ul{width: calc(100% - 100px)}
     .sp_mod_history03 .history > div > ul li div.month{width: 30px;}
     .sp03_mod_emp .salary{display: block;}
-    .sp03_mod_emp .salary > div + div{margin-top: 3rem}
-    .sp03_mod_emp .salary > div{display: flex;padding-left: 0 !important;justify-content: center;}
-    .sp03_mod_emp .salary > div:before{position: static !important;margin-right: 3rem}
+    .sp03_mod_emp .salary > div + div{margin-top: 4rem;border-left: 0}
+    .sp03_mod_emp .salary > div{width: 100%;}
     
     .sp_mod02_finance .fin_wrap.slick-slider > div{margin-left: 0}
     
