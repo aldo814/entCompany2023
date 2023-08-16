@@ -797,7 +797,73 @@ $(document).ready(function () {
         var height2 = $('.sp_mod_comview04 .item img:nth-child(2)').outerHeight();
         
         $('.sp_mod_comview04 .item').css('height',height1+height2 + 69)
-    })
+    });
+    
+ $('.sp_mod_history05 .tab a').click(function(){
+      const targetSlide = $(this).data('tab');
+      $('.sp_mod_history05 .history_wrap').slick('slickGoTo', targetSlide);
+ 
+
+ });
+
+
+            $('.sp_mod_history05 .history_wrap').slick({
+
+                slide: 'div',   
+
+                infinite : true,    
+
+                slidesToShow : 6,       
+
+                slidesToScroll : 1,     
+
+                speed : 300,     
+
+                arrows : true,  
+
+                vertical : false,       
+                dotsClass : "slick-dots",   
+
+                draggable : true, 
+
+                
+
+                responsive: [ // 반응형 웹 구현 옵션
+
+                    {  
+
+                        breakpoint: 960, //화면 사이즈 960px
+
+                        settings: {
+
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+
+                            slidesToShow:3 
+
+                        } 
+
+                    },
+
+                    { 
+
+                        breakpoint: 768, //화면 사이즈 768px
+
+                        settings: { 
+
+                            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+
+                            slidesToShow:2 
+
+                        } 
+
+                    }
+
+                ]
+
+
+
+
+            });
 
 });
 
