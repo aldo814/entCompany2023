@@ -543,14 +543,16 @@
                     </div>
                 </div>
             </div>
-
+            
+            
+            <div class="sp02_pct_wrap">
+            <h3 class="sp_tit03">규모형태</h3>
             <div class="sp02_mod_percent">
                 <div>
                     <div id="percent"></div>
                     <ul id="legend09"></ul>
                 </div>
                 <div>
-                    <h4>규모형태</h4>
                     <div>
                         <div class="left">
                             <div class="ico"></div>
@@ -569,6 +571,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -633,7 +636,7 @@
                     </div>
                     <div class="item">
                         <div class="img">
-                            <img src="images/sp02_stt.png" alt="">
+                            <img src="images/sp02_stt2.png" alt="">
                         </div>
                         <div class="txt">
                             <div class="q">성장배경에 대해서 기술해주세요.</div>
@@ -1163,6 +1166,70 @@
             legend: {
                 contents: {
                     bindto: "#join_legend",
+                    template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
+                }
+            }
+        });
+        
+        
+        
+        var chart5 = bb.generate({
+            bindto: "#percent",
+            data: {
+                type: "bar",
+                columns: [
+                    ["업종평균", 50, 10, 20, 100],
+                    ["당사", 50, 10, 20, 100],
+                ],
+                colors: {
+                    업종평균: "#d5d5d5",
+                    당사: "#0098ff",
+                },
+                labels: true
+            },
+            padding: {
+                top: 20,
+                left: 80
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            },
+
+            axis: {
+                x: {
+                    type: "category",
+                    categories: ['규모형태', '수익성', '성장성', '안정성'],
+                    padding: {
+                        left: .2,
+                        right: .2
+                    },
+                    tick: {
+                        stepSize: 20
+                    }
+                },
+                y: {
+                    tick: {
+                        stepSize: 20
+                    }
+                },
+                rotated: true,
+
+            },
+            bar: {
+                width: {
+                    max: 20
+                },
+                padding: 5,
+            },
+
+            legend: {
+                contents: {
+                    bindto: "#legend09",
                     template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
                 }
             }
