@@ -857,72 +857,6 @@
 
     <script>
         //차트영역
-        var chart1 = bb.generate({
-            bindto: "#graph_empCnt",
-            data: {
-                type: "line",
-                // ******* 아래 columns 항목은 퍼블시 디자인 확인 영역 등록시 주석처리******
-                columns: [
-                    ["입사자", 45, 33, 11, 55, 33, 11, 55, 33, 11, 55, 33],
-                    ["퇴사자", 35, 23, 11, 55, 33, 11, 55, 33, 11, 55, 33],
-                    ["총원", 55, 13, 11, 55, 33, 11, 55, 33, 11, 55, 33]
-                ],
-                // ******관리자 등록시 아래 columns 영역 주석풀고 등록 ******	
-                //                            columns: [
-                //                                joinCntList,
-                //                                resignCntList,
-                //                                totalCntList
-                //                            ],
-                colors: {
-                    입사자: "#47c5f3",
-                    퇴사자: "#d0d0d0",
-                    총원: "#3e69ff"
-                }
-            },
-            axis: {
-                x: {
-                    type: "category",
-                    //아래 categories 항목은 퍼블시 디자인 확인 영역 등록시 주석처리
-                    categories: ["202110", "202109", "202108", "202107", "202106", "202105", "202104", "202103", "202102", "202101", "202012", "202111"],
-                    // ******관리자 등록시 아래 categories 영역 주석풀고 등록 ******
-                    //categories: ctLabelDataList,
-                    tick: {
-                        fit: true,
-                        multiline: false,
-                        autorotate: true,
-                        rotate: 30,
-                    }
-                }
-            },
-            grid: {
-                x: {
-                    show: false,
-
-                },
-                y: {
-                    show: true
-                }
-            },
-            padding: {
-                bottom: 40,
-                right: 40
-            },
-            point: {
-                pattern: [
-                    "<g><circle cx='8' cy='8' r='8'></circle></g>"
-                ]
-            },
-            legend: {
-                contents: {
-                    bindto: "#legend",
-                    template: "<li><span style='width:20px;height:20px;border-radius:50%;display:inline-block;margin-right:5px;border:5px solid ;border-color:{=COLOR};box-sizing:border-box'></span>{=TITLE}</li>"
-                }
-            }
-        });
-        setTimeout(function() {
-            chart1.resize();
-        }, 100);
-
         var chart6 = bb.generate({
             bindto: "#capital",
             data: {
@@ -973,54 +907,6 @@
         });
 
 
-        var chart5 = bb.generate({
-            bindto: "#profit",
-            data: {
-                type: "bar",
-                columns: [
-                    ["업종평균", 1550, 1550, 1550],
-                    ["당사", 3103, 2920, 2767],
-                ],
-                colors: {
-                    업종평균: "#d5d5d5",
-                    당사: "#0098ff",
-                }
-            },
-            padding: {
-                top: 20,
-                left: 0
-            },
-            grid: {
-                x: {
-                    show: false
-                },
-                y: {
-                    show: true
-                }
-            },
-            axis: {
-                x: {
-                    type: "category",
-                    categories: [2021, 2020, 2019],
-                    padding: {
-                        left: .2,
-                        right: .2
-                    }
-                }
-            },
-            bar: {
-                width: {
-                    max: 20
-                },
-                padding: 5,
-            },
-            legend: {
-                contents: {
-                    bindto: "#legend03",
-                    template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
-                }
-            }
-        });
 
         var chart5 = bb.generate({
             bindto: "#debt",
@@ -1220,67 +1106,6 @@
         });
 
 
-        var chart5 = bb.generate({
-            bindto: "#percent",
-            data: {
-                type: "bar",
-                columns: [
-                    ["업종평균", 50, 10, 20, 100],
-                    ["당사", 50, 10, 20, 100],
-                ],
-                colors: {
-                    업종평균: "#d5d5d5",
-                    당사: "#0098ff",
-                },
-                labels: true
-            },
-            padding: {
-                top: 20,
-                left: 80
-            },
-            grid: {
-                x: {
-                    show: false
-                },
-                y: {
-                    show: true
-                }
-            },
-
-            axis: {
-                x: {
-                    type: "category",
-                    categories: ['규모형태', '수익성', '성장성', '안정성'],
-                    padding: {
-                        left: .2,
-                        right: .2
-                    },
-                    tick: {
-                        stepSize: 20
-                    }
-                },
-                y: {
-                    tick: {
-                        stepSize: 20
-                    }
-                },
-                rotated: true,
-
-            },
-            bar: {
-                width: {
-                    max: 20
-                },
-                padding: 5,
-            },
-
-            legend: {
-                contents: {
-                    bindto: "#legend09",
-                    template: "<li><span style='width:25px;height:10px;display:inline-block;margin-right:5px;background:{=COLOR}'></span>{=TITLE}</li>"
-                }
-            }
-        });
         
         var chart5 = bb.generate({
             bindto: ".join_chart",
