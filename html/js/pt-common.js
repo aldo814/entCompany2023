@@ -533,9 +533,11 @@ $(document).ready(function () {
     }
 
     sliderInit();
-
-
-    $('.fin_wrap').slick({
+    $('.fin_wrap').each(function() {
+        // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
+        var childDivCount = $(this).children('div').length;
+        if (childDivCount >= 3) {
+              $(this).slick({
         slidesToShow: 2,
         slidesToScroll: 2,
         setPosition: 0,
@@ -559,7 +561,11 @@ $(document).ready(function () {
                     ]
 
     });
+      
 
+        }
+    });
+    
 
     $('.sp_mod_culture02 .culwel_wrap').slick({
         rows: 2,
@@ -605,8 +611,16 @@ $(document).ready(function () {
 
     });
 
-    $('.sp_mod02_finance .top').click(function () {
-        $(this).find('span').toggle();
+    $('.sp_mod02_finance .top a').click(function () {
+        $(this).parent().children('div').show();
+        $(this).parent().parent().parent().parent().parent().parent().parent().addClass('on');
+        $('.shadow').show();
+    });
+    
+    $('.sp_mod02_finance .top > div .in_top a').click(function () {
+        $('.fin_layer').hide();
+        $('.shadow').hide();
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().removeClass('on');
     });
 
     $('.sp_rep_Img03').slick({
