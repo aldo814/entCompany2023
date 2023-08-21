@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     $('.com_mod_anchor a').off("click").on('click', function () {
         var target = $(this.hash)
-        var header = $('#header').outerHeight();
+        var header = $('#newHeader').outerHeight();
         var not_header_height = $('.com_mod_anchor.not_fixed').outerHeight();
         var not_header_height02 = $('.com_mod_header.not_fixed').outerHeight()
         var header_height = $('.com_mod_anchor.fixed').outerHeight();
@@ -543,11 +543,13 @@ $(document).ready(function () {
         setPosition: 0,
         arrows: true,
         dots: false,
+                  speed: 300,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
 
                 }
                         },
@@ -555,6 +557,7 @@ $(document).ready(function () {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
 
                 }
                         }
@@ -613,14 +616,14 @@ $(document).ready(function () {
 
     $('.sp_mod02_finance .top a').click(function () {
         $(this).parent().children('div').show();
-        $(this).parent().parent().parent().parent().parent().parent().parent().addClass('on');
+        $('.sp_mod02_finance .fin_wrap').addClass('on');
         $('.shadow').show();
     });
     
     $('.sp_mod02_finance .top > div .in_top a').click(function () {
         $('.fin_layer').hide();
         $('.shadow').hide();
-        $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().removeClass('on');
+        $('.sp_mod02_finance .fin_wrap').removeClass('on');
     });
 
     $('.sp_rep_Img03').slick({
@@ -631,6 +634,8 @@ $(document).ready(function () {
         autoplaySpeed: 5000,
 
     });
+    
+    
 
     $('.sp_rep_Img_wrap .slick-dots').append('<li class="start_wrap"><button class="play">시작</button></li><li class="stop_wrap"><button class="stop">정지</button></li>');
 
