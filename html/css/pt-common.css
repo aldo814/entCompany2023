@@ -1151,7 +1151,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod02_finance{background: #f2f2f2;position: relative}
 .shadow{width: 100%;height: 100%;background: rgba(0, 0, 0, 0.5);position: fixed;left:0;top: 0;display: none;z-index: 1}
 .sp_mod02_finance .top  > div{background: #fff;position:absolute;left:0;padding: 3rem;border-radius: 10px;z-index: 999;box-sizing: border-box;top: 67px;width: calc(200%  + 30px);max-width: 1080px;word-break: keep-all;display: none;}
-.bg_gray{padding: 0.5rem 2rem;background: #e2e2e2;border-radius: 5px;color: #444444;font-weight: 500;display: inline-block;max-width: calc(100% - 180px);word-break: keep-all}
+.bg_gray{padding: 0.5rem 2rem;background: #e2e2e2;border-radius: 5px;color: #444444;font-weight: 500;display: inline-block;max-width: calc(100% - 250px);word-break: keep-all}
 .sp_mod02_finance .top  > div .in_top{display: flex;justify-content: space-between;align-items: center;margin-bottom: 2rem;}
 .sp_mod02_finance .top  > div .in_top h5{font-size: 1.8rem;padding-bottom: 1rem;border-bottom: 1px solid #000;color: #000;font-weight: 500}
 .sp_mod02_finance .top  > div .in_top a{color: #888888;}
