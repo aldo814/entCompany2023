@@ -1210,7 +1210,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod02_finance .fin_wrap.slick-slider .slick-slide > div > div{height: 100%;}
 .sp_mod02_finance .fin_wrap .slick-list {margin: 0 -15px;padding-top: 100px;margin-top: -100px;}
 .sp_mod02_finance .fin_wrap .bottom{height: calc(100% - 67px)}
-.sp_mod02_finance .top a{position: relative;color: #fff}
+.sp_mod02_finance .top a{position: relative;color: #fff !important}
 .sp_mod02_finance .top a span{display: block;background: #fff;color: #333;font-size: 1.4rem;padding: 1.5rem;position: absolute;left: -25px;bottom: 23px;width: 340px;border: 1px solid #565d79;z-index: 555;display: none}
 .sp_mod02_finance .top a span:before{content: '';display: block;background: url(../images/spbottom.png) no-repeat;width: 9px;height: 6px;left: 30px;bottom: -6px;position: absolute;}
 .sp02_pct_wrap{margin-top: 7rem;}
