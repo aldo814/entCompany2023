@@ -970,6 +970,7 @@
     </div>
 
     <script>
+
         //차트영역
         var chart6 = bb.generate({
             bindto: "#capital",
@@ -981,23 +982,22 @@
                 },
 
                 columns: [
-                    ["업종평균", 1550, 1550, 1550],
-                    ["당사", 3103, 2920, 2767],
-                    ["변화", 3103, 2920, 2767]
+                    ["업종평균", -1000, -200, -400],
+                    ["당사", -1250, -350, -170],
+                    ["변화", -1250, -350, -170]
                 ],
                 colors: {
                     업종평균: "#d5d5d5",
                     당사: "#0098ff",
                     변화: "#ec3219",
                 },
-                
                 labels: {
-                    format: function(v, id) {
-                        return Math.abs(v);
-                    }
-                },
+                    colors: "white",
+                }
+
             },
-            
+
+
             padding: {
                 top: 20,
                 left: 0
@@ -1017,6 +1017,17 @@
                     padding: {
                         left: .2,
                         right: .2
+                    }
+                },
+                y: {
+                    tick: {
+                        format: function(value) {
+                            // 음수 값을 가진 라벨을 특별한 형식으로 표현하고자 할 때 설정합니다.
+                            if (value < 0) {
+                                return '-' + Math.abs(value);
+                            }
+                            return value;
+                        }
                     }
                 }
             },
@@ -1050,7 +1061,7 @@
 
         var chart5 = bb.generate({
             bindto: "#debt",
-            data: {
+             data: {
                 types: {
                     업종평균: "bar", // for ESM specify as: bar()
                     당사: "bar", // for ESM specify as: bar()
@@ -1058,23 +1069,23 @@
                 },
 
                 columns: [
-                    ["업종평균", 1550, 1550, 1550],
-                    ["당사", 3103, 2920, 2767],
-                    ["변화", 3103, 2920, 2767]
+                    ["업종평균", -1000, -200, -400],
+                    ["당사", -1250, -350, -170],
+                    ["변화", -1250, -350, -170]
                 ],
                 colors: {
                     업종평균: "#d5d5d5",
                     당사: "#0098ff",
                     변화: "#ec3219",
                 },
-                
                 labels: {
-                    format: function(v, id) {
-                        return Math.abs(v);
-                    }
-                },
+                    colors: "white",
+                    centered: true
+                }
+
             },
-            
+
+
             padding: {
                 top: 20,
                 left: 0
@@ -1094,6 +1105,17 @@
                     padding: {
                         left: .2,
                         right: .2
+                    }
+                },
+                y: {
+                    tick: {
+                        format: function(value) {
+                            // 음수 값을 가진 라벨을 특별한 형식으로 표현하고자 할 때 설정합니다.
+                            if (value < 0) {
+                                return '-' + Math.abs(value);
+                            }
+                            return value;
+                        }
                     }
                 }
             },
@@ -1133,23 +1155,23 @@
                 },
 
                 columns: [
-                    ["업종평균", 1550, 1550, 1550],
-                    ["당사", 3103, 2920, 2767],
-                    ["변화", 3103, 2920, 2767]
+                    ["업종평균", -1000, -200, -400],
+                    ["당사", -1250, -350, -170],
+                    ["변화", -1250, -350, -170]
                 ],
                 colors: {
                     업종평균: "#d5d5d5",
                     당사: "#0098ff",
                     변화: "#ec3219",
                 },
-                
                 labels: {
-                    format: function(v, id) {
-                        return Math.abs(v);
-                    }
-                },
+                    colors: "white",
+                    centered: true
+                }
+
             },
-            
+
+
             padding: {
                 top: 20,
                 left: 0
@@ -1169,6 +1191,17 @@
                     padding: {
                         left: .2,
                         right: .2
+                    }
+                },
+                y: {
+                    tick: {
+                        format: function(value) {
+                            // 음수 값을 가진 라벨을 특별한 형식으로 표현하고자 할 때 설정합니다.
+                            if (value < 0) {
+                                return '-' + Math.abs(value);
+                            }
+                            return value;
+                        }
                     }
                 }
             },
@@ -1208,23 +1241,23 @@
                 },
 
                 columns: [
-                    ["업종평균", 1550, 1550, 1550],
-                    ["당사", 3103, 2920, 2767],
-                    ["변화", 3103, 2920, 2767]
+                    ["업종평균", -1000, -200, -400],
+                    ["당사", -1250, -350, -170],
+                    ["변화", -1250, -350, -170]
                 ],
                 colors: {
                     업종평균: "#d5d5d5",
                     당사: "#0098ff",
                     변화: "#ec3219",
                 },
-                
                 labels: {
-                    format: function(v, id) {
-                        return Math.abs(v);
-                    }
-                },
+                    colors: "white",
+                    centered: true
+                }
+
             },
-            
+
+
             padding: {
                 top: 20,
                 left: 0
@@ -1244,6 +1277,17 @@
                     padding: {
                         left: .2,
                         right: .2
+                    }
+                },
+                y: {
+                    tick: {
+                        format: function(value) {
+                            // 음수 값을 가진 라벨을 특별한 형식으로 표현하고자 할 때 설정합니다.
+                            if (value < 0) {
+                                return '-' + Math.abs(value);
+                            }
+                            return value;
+                        }
                     }
                 }
             },
@@ -1276,7 +1320,7 @@
 
         var chart5 = bb.generate({
             bindto: "#profit02",
-             data: {
+              data: {
                 types: {
                     업종평균: "bar", // for ESM specify as: bar()
                     당사: "bar", // for ESM specify as: bar()
@@ -1284,23 +1328,23 @@
                 },
 
                 columns: [
-                    ["업종평균", 1550, 1550, 1550],
-                    ["당사", 3103, 2920, 2767],
-                    ["변화", 3103, 2920, 2767]
+                    ["업종평균", -1000, -200, -400],
+                    ["당사", -1250, -350, -170],
+                    ["변화", -1250, -350, -170]
                 ],
                 colors: {
                     업종평균: "#d5d5d5",
                     당사: "#0098ff",
                     변화: "#ec3219",
                 },
-                
                 labels: {
-                    format: function(v, id) {
-                        return Math.abs(v);
-                    }
-                },
+                    colors: "white",
+                    centered: true
+                }
+
             },
-            
+
+
             padding: {
                 top: 20,
                 left: 0
@@ -1320,6 +1364,17 @@
                     padding: {
                         left: .2,
                         right: .2
+                    }
+                },
+                y: {
+                    tick: {
+                        format: function(value) {
+                            // 음수 값을 가진 라벨을 특별한 형식으로 표현하고자 할 때 설정합니다.
+                            if (value < 0) {
+                                return '-' + Math.abs(value);
+                            }
+                            return value;
+                        }
                     }
                 }
             },
