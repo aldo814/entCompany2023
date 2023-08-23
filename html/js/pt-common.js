@@ -554,7 +554,7 @@ $(document).ready(function () {
                 }
                         },
             {
-                breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -825,6 +825,132 @@ $(document).ready(function () {
           return text === "-" ? "+" : "-";
       })
     });
+    
+      $('.sp_mod_history05 .tab li a').click(function(){
+        var slideIndex = $(this).data('slide');
+        $('.sp_mod_history05 .history_wrap').slick('slickGoTo', slideIndex);
+          $('.tab li').removeClass('on'); // Remove 'on' class from all tabs
+        $(this).parent().addClass('on'); 
+      });
+    
+    $('.sp_mod_history05 .history_wrap').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.tab li').removeClass('on'); // Remove 'active' class from all tabs
+        $('.tab li').eq(nextSlide).addClass('on');
+      });
+    
+    $('.sp_mod_history05 .history_wrap').slick({
+        arrows: true,
+        dots: false,
+        speed: 500,
+        infinite :false
+      });
+
+    
+    $('.sp_mod_cert .cert_wrap').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 6,
+        centerMode:true,
+         centerPadding: '100px',
+      });
+    
+    $('.sp_mod_partners03 .b_part').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 5,
+        infinite :false
+      });
+    
+     $('.sp_mod_biz05 .bizDiv').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow:3,
+         infinite :false
+      });
+    
+    $('.sp_mod_comview05 .img_wrap').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow:3,
+        centerMode:true,
+        variableWidth: true,
+        cssEase: 'linear',
+        speed:200
+      });
+    
+    
+    
+      var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
+
+        return $(this).height();
+
+    }).get();
+
+    var maxHeight2 = Math.max.apply(Math, heightArray2);
+
+    $(".sp_mod_biz05 .txt").height(maxHeight2);
+
+
+    $('.sp_mod_comMov02 .comMov_slide').slick({
+        arrows: true,
+        dots: false,
+      });
+    
+        var msnry = new Masonry('.sp05_mod_product .product', {
+        itemSelector: '.item',
+            gutter: 30
+    });
+    
+    $('.sp05_mod_finance .flex_wrap').each(function() {
+        // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
+        var childDivCount02 = $(this).children('div').length;
+        if (childDivCount02 >= 3) {
+              $(this).slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        setPosition: 0,
+        arrows: true,
+        dots: false,
+                  setPosition:0,
+                  speed: 300,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+
+                }
+                        },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+                        }
+                    ]
+
+    });
+      
+
+        }
+    });
+    
+    
+      $('.sp05_mod_finance  .tit a').click(function () {
+        $(this).parent().children('div').show();
+        $('.sp05_mod_finance .flex_wrap').addClass('on');
+        $('.shadow').show();
+    });
+    
+    $('.sp05_mod_finance .tit .in_top a').click(function () {
+        $('.fin_layer').hide();
+        $('.shadow').hide();
+        $('.sp05_mod_finance .flex_wrap').removeClass('on');
+    });
+
 
 
 });
@@ -852,4 +978,14 @@ $(window).resize(function () {
         });
 
     }
+    
+      var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
+
+        return $(this).height();
+
+    }).get();
+
+    var maxHeight2 = Math.max.apply(Math, heightArray2);
+
+    $(".sp_mod_biz05 .txt").height(maxHeight2);
 }).resize();
