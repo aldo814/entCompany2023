@@ -533,42 +533,42 @@ $(document).ready(function () {
     }
 
     sliderInit();
-    $('.fin_wrap').each(function() {
+    $('.fin_wrap').each(function () {
         // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
         var childDivCount = $(this).children('div').length;
         if (childDivCount >= 3) {
-              $(this).slick({
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        setPosition: 0,
-        arrows: true,
-        dots: false,
-                  speed: 300,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+            $(this).slick({
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                setPosition: 0,
+                arrows: true,
+                dots: false,
+                speed: 300,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
 
-                }
+                        }
                         },
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
 
-                }
+                        }
                         }
                     ]
 
-    });
-      
+            });
+
 
         }
     });
-    
+
 
     $('.sp_mod_culture02 .culwel_wrap').slick({
         rows: 2,
@@ -619,7 +619,7 @@ $(document).ready(function () {
         $('.sp_mod02_finance .fin_wrap').addClass('on');
         $('.shadow').show();
     });
-    
+
     $('.sp_mod02_finance .top > div .in_top a').click(function () {
         $('.fin_layer').hide();
         $('.shadow').hide();
@@ -634,8 +634,8 @@ $(document).ready(function () {
         autoplaySpeed: 5000,
 
     });
-    
-    
+
+
 
     $('.sp_rep_Img_wrap .slick-dots').append('<li class="start_wrap"><button class="play">시작</button></li><li class="stop_wrap"><button class="stop">정지</button></li>');
 
@@ -821,66 +821,66 @@ $(document).ready(function () {
 
     $('.tips p  a').click(function () {
         $(this).parent().toggleClass('on');
-        $(this).text(function(i, text){
-          return text === "-" ? "+" : "-";
-      })
+        $(this).text(function (i, text) {
+            return text === "-" ? "+" : "-";
+        })
     });
-    
-      $('.sp_mod_history05 .tab li a').click(function(){
+
+    $('.sp_mod_history05 .tab li a').click(function () {
         var slideIndex = $(this).data('slide');
         $('.sp_mod_history05 .history_wrap').slick('slickGoTo', slideIndex);
-          $('.tab li').removeClass('on'); // Remove 'on' class from all tabs
-        $(this).parent().addClass('on'); 
-      });
-    
-    $('.sp_mod_history05 .history_wrap').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.tab li').removeClass('on'); // Remove 'on' class from all tabs
+        $(this).parent().addClass('on');
+    });
+
+    $('.sp_mod_history05 .history_wrap').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         $('.tab li').removeClass('on'); // Remove 'active' class from all tabs
         $('.tab li').eq(nextSlide).addClass('on');
-      });
-    
+    });
+
     $('.sp_mod_history05 .history_wrap').slick({
         arrows: true,
         dots: false,
         speed: 500,
-        infinite :false
-      });
+        infinite: false
+    });
 
-    
+
     $('.sp_mod_cert .cert_wrap').slick({
         arrows: false,
         dots: false,
         slidesToShow: 6,
-        centerMode:true,
-         centerPadding: '100px',
-      });
-    
+        centerMode: true,
+        centerPadding: '100px',
+    });
+
     $('.sp_mod_partners03 .b_part').slick({
         arrows: true,
         dots: false,
         slidesToShow: 5,
-        infinite :false
-      });
-    
-     $('.sp_mod_biz05 .bizDiv').slick({
+        infinite: false
+    });
+
+    $('.sp_mod_biz05 .bizDiv').slick({
         arrows: true,
         dots: false,
-        slidesToShow:3,
-         infinite :false
-      });
-    
+        slidesToShow: 3,
+        infinite: false
+    });
+
     $('.sp_mod_comview05 .img_wrap').slick({
         arrows: true,
         dots: false,
-        slidesToShow:3,
-        centerMode:true,
+        slidesToShow: 3,
+        centerMode: true,
         variableWidth: true,
         cssEase: 'linear',
-        speed:200
-      });
-    
-    
-    
-      var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
+        speed: 200
+    });
+
+
+
+    var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
 
         return $(this).height();
 
@@ -894,66 +894,76 @@ $(document).ready(function () {
     $('.sp_mod_comMov02 .comMov_slide').slick({
         arrows: true,
         dots: false,
-      });
-    
-        var msnry = new Masonry('.sp05_mod_product .product', {
-        itemSelector: '.item',
-            gutter: 30
     });
-    
-    $('.sp05_mod_finance .flex_wrap').each(function() {
+
+    var msnry = new Masonry('.sp05_mod_product .product', {
+        itemSelector: '.item',
+        gutter: 30
+    });
+
+    $('.sp05_mod_finance .flex_wrap').each(function () {
         // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
         var childDivCount02 = $(this).children('div').length;
         if (childDivCount02 >= 3) {
-              $(this).slick({
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        setPosition: 0,
-        arrows: true,
-        dots: false,
-                  setPosition:0,
-                  speed: 300,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+            $(this).slick({
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                setPosition: 0,
+                arrows: true,
+                dots: false,
+                setPosition: 0,
+                speed: 300,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
 
-                }
+                        }
                         },
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
 
-                }
+                        }
                         }
                     ]
 
-    });
-      
+            });
+
 
         }
     });
-    
-    
-      $('.sp05_mod_finance  .tit a').click(function () {
+
+
+    $('.sp05_mod_finance  .tit a').click(function () {
         $(this).parent().children('div').show();
         $('.sp05_mod_finance .flex_wrap').addClass('on');
         $('.shadow').show();
     });
-    
+
     $('.sp05_mod_finance .tit .in_top a').click(function () {
         $('.fin_layer').hide();
         $('.shadow').hide();
         $('.sp05_mod_finance .flex_wrap').removeClass('on');
     });
 
+if (window.innerWidth < 768) {
+    $('.fin_wrap:not(.slick-slider)').each(function () {
+        $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                setPosition: 0,
 
+            });
+    });
+}
 
 });
+
 
 
 
@@ -964,6 +974,27 @@ $(window).resize(function () {
 
         $('.sp_mod_comview04 .item').css('height', height1 + height2 + 69)
     })
+
+    
+if (window.innerWidth < 768) {
+    $('.fin_wrap:not(.slick-slider)').each(function () {
+        $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                setPosition: 0,
+
+            });
+    });
+} else {
+    $('.fin_wrap').each(function () {
+        // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
+        var childDivCount = $(this).children().children().children('.slick-slide').length;
+        if (childDivCount < 6) {
+            $(this).slick('unslick'); 
+        } else{
+        }
+    });
+}
 
     if (window.innerWidth > 999) {
 
@@ -978,8 +1009,10 @@ $(window).resize(function () {
         });
 
     }
-    
-      var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
+
+
+
+    var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
 
         return $(this).height();
 

@@ -2218,10 +2218,13 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     
     .sp_mod02_finance .fin_wrap.slick-slider{padding:0}
     .sp_mod02_finance .fin_wrap .slick-list{margin-right: 0;margin-left: 0}
+    .sp_mod02_finance .fin_wrap > div{position: relative !important;}
     .sp_mod02_finance .slick-prev,
     .sp_mod02_finance .slick-next{display: none !important}
-    
+    .sp_mod02_finance .top .blue{position: static;text-align: right;margin-top: 2rem;}
+    .sp_mod02_finance .top img{max-width: 100%}
     .sp_mod_cultReview .cultReview > .item{width: calc(33.333% - 20px)}
+    .bg_gray{max-width: 100%;}
     
     .sp_rep_Img02 .txt{padding: 10rem}
     
@@ -2536,8 +2539,10 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp_mod02_finance .fin_wrap .info{justify-content: space-evenly}
     .sp_mod02_finance .fin_wrap .info > div{width: calc(50%)}
     
-    .sp_mod02_finance .top > div{width: 100%;left: 0;top: 53px}
+    .sp_mod02_finance .top > div{width: 100%;left: 0;top: 53px;padding: 2rem}
     
+    .sp_mod02_finance .fin_wrap .bottom{height: calc(100% - 53px)}
+    .sp_mod02_finance .fin_layer p{font-size: 1.5rem}
 }
 
 
