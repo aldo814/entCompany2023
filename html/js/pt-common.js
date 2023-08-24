@@ -78,8 +78,8 @@ $(document).ready(function () {
         if ($(document).scrollTop() > gnbOffset.top) {
             $('.com_mod_header, .com_mod_anchor').addClass('fixed');
             $('.com_mod_header, .com_mod_anchor').removeClass('not_fixed');
-            var headerHeight = $('.com_mod_header').height();
-            $('.com_mod_anchor').css('top', headerHeight + 48);
+            var headerHeight = $('.com_mod_header').outerHeight();
+            $('.com_mod_anchor').css('top', headerHeight);
         } else {
             $('.com_mod_header, .com_mod_anchor').removeClass('fixed');
             $('.com_mod_header, .com_mod_anchor').addClass('not_fixed');
@@ -961,6 +961,23 @@ if (window.innerWidth < 768) {
             });
     });
 }
+    
+    $('.sp05_mod_culture .culwel_wrap').slick({
+                slidesToShow: 3,
+        dots:false,
+        arrows:true
+
+            });
+    
+       var heightArray3 = $(".sp05_mod_culture .desc").map(function () {
+
+        return $(this).height();
+
+    }).get();
+
+    var maxHeight2 = Math.max.apply(Math, heightArray3);
+
+    $(".sp05_mod_culture .desc").height(maxHeight3);
 
 });
 
@@ -1009,7 +1026,16 @@ if (window.innerWidth < 768) {
         });
 
     }
+    
+    var heightArray = $(".sp_mod_biz04 .txt").map(function () {
 
+        return $(this).height();
+
+    }).get();
+
+    var maxHeight = Math.max.apply(Math, heightArray);
+
+    $(".sp_mod_biz04 .txt").height(maxHeight);
 
 
     var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
@@ -1021,4 +1047,14 @@ if (window.innerWidth < 768) {
     var maxHeight2 = Math.max.apply(Math, heightArray2);
 
     $(".sp_mod_biz05 .txt").height(maxHeight2);
+    
+    var heightArray3 = $(".sp05_mod_culture .desc").map(function () {
+
+        return $(this).height();
+
+    }).get();
+
+    var maxHeight2 = Math.max.apply(Math, heightArray3);
+
+    $(".sp05_mod_culture .desc").height(maxHeight3);
 }).resize();
