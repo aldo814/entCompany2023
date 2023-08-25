@@ -852,20 +852,76 @@ $(document).ready(function () {
         slidesToShow: 6,
         centerMode: true,
         centerPadding: '100px',
+        responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+
+                        }
+                        },
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+
+                        }
+                        },
+            {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+
+                        }
+                        }
+                    ]
     });
 
     $('.sp_mod_partners03 .b_part').slick({
         arrows: true,
         dots: false,
         slidesToShow: 5,
-        infinite: false
+        infinite: false,
+        responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+
+                        }
+                        },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+
+                        }
+                  },
+            ]
     });
 
     $('.sp_mod_biz05 .bizDiv').slick({
         arrows: true,
         dots: false,
         slidesToShow: 3,
-        infinite: false
+        infinite: false,
+        responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+
+                        },
+                    },{
+                         breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+
+                        }
+                       }
+                        ]
     });
 
     $('.sp_mod_comview05 .img_wrap').slick({
@@ -873,9 +929,20 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 3,
         centerMode: true,
-        variableWidth: true,
         cssEase: 'linear',
-        speed: 200
+        variableWidth: true,
+        speed: 200,
+        responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: false,
+                            centerPadding: '0'
+
+                        },
+                        },
+                        ]
     });
 
 
@@ -960,12 +1027,37 @@ if (window.innerWidth < 768) {
 
             });
     });
+    
+    
+     setTimeout(function() {
+                chart2.resize();
+                chart3.resize();
+                chart4.resize();
+                chart5.resize();
+                chart6.resize();
+                chart7.resize();
+                chart8.resize();
+                chart9.resize();
+            }, 200);
+    
+    
+    $(".imgFill").imgLiquid();
+    
 }
     
     $('.sp05_mod_culture .culwel_wrap').slick({
                 slidesToShow: 3,
         dots:false,
-        arrows:true
+        arrows:true,
+         responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+
+                        }
+                        }
+             ]
 
             });
     
@@ -975,9 +1067,11 @@ if (window.innerWidth < 768) {
 
     }).get();
 
-    var maxHeight2 = Math.max.apply(Math, heightArray3);
+    var maxHeight3 = Math.max.apply(Math, heightArray3);
 
     $(".sp05_mod_culture .desc").height(maxHeight3);
+    
+    
 
 });
 
@@ -985,6 +1079,19 @@ if (window.innerWidth < 768) {
 
 
 $(window).resize(function () {
+    
+    
+     setTimeout(function() {
+                chart2.resize();
+                chart3.resize();
+                chart4.resize();
+                chart5.resize();
+                chart6.resize();
+                chart7.resize();
+                chart8.resize();
+                chart9.resize();
+            }, 200);
+    
     $('.sp_mod_comview04 .item img').each(function () {
         var height1 = $('.sp_mod_comview04 .item img:nth-child(1)').outerHeight();
         var height2 = $('.sp_mod_comview04 .item img:nth-child(2)').outerHeight();
@@ -994,7 +1101,29 @@ $(window).resize(function () {
 
     
 if (window.innerWidth < 768) {
+    
+     setTimeout(function() {
+                chart2.resize();
+                chart3.resize();
+                chart4.resize();
+                chart5.resize();
+                chart6.resize();
+                chart7.resize();
+                chart8.resize();
+                chart9.resize();
+            }, 200);
+    
     $('.fin_wrap:not(.slick-slider)').each(function () {
+        $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                setPosition: 0,
+
+            });
+    });
+    
+    
+    $('.sp05_mod_finance .flex_wrap:not(.slick-slider)').each(function () {
         $(this).slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -1004,6 +1133,15 @@ if (window.innerWidth < 768) {
     });
 } else {
     $('.fin_wrap').each(function () {
+        // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
+        var childDivCount = $(this).children().children().children('.slick-slide').length;
+        if (childDivCount < 6) {
+            $(this).slick('unslick'); 
+        } else{
+        }
+    });
+    
+    $('.sp05_mod_finance').each(function () {
         // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
         var childDivCount = $(this).children().children().children('.slick-slide').length;
         if (childDivCount < 6) {
@@ -1054,7 +1192,11 @@ if (window.innerWidth < 768) {
 
     }).get();
 
-    var maxHeight2 = Math.max.apply(Math, heightArray3);
+    var maxHeight3 = Math.max.apply(Math, heightArray3);
 
     $(".sp05_mod_culture .desc").height(maxHeight3);
+    
+    
+    
+    
 }).resize();

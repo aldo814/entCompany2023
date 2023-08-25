@@ -443,9 +443,7 @@
             <p class="b_subText">㈜대연씨앤아이는 태양광 발전용 접속함 및 모니터링 시스템의 공급과 ESS (Enegry Storage System) 분야의 전문 기업으로,<br>
                 1998년 설립되어 지난 20년간 끊임없는 기술 개발과 경영 혁신 활동을 통하여 신재생 에너지 분야의 기업 문화를 선도하고 있습니다.</p>
             <div class="bizDiv">
-                <div class="item imgFill">
-                    <img src="images/sp05_biz01.png" alt="">
-
+                <div class="item" style="background:url(./images/sp05_biz01.png) no-repeat;background-size: cover">
                     <div class="txt">
                         <h4>태양광 모니터링 시스템</h4>
                         <p>각 장비(인버터,접속함, 기상관측 등)의 실시간
@@ -453,24 +451,21 @@
                         </p>
                     </div>
                 </div>
-                <div class="item imgFill">
-                    <img src="images/sp05_biz02.png" alt="">
+                <div class="item" style="background:url(./images/sp05_biz02.png) no-repeat;background-size: cover">
 
                     <div class="txt">
                         <h4>테이터 수집 &amp; 제어</h4>
                         <p>태양광 현황판(CE인증)</p>
                     </div>
                 </div>
-                <div class="item imgFill">
-                    <img src="images/sp05_biz03.png" alt="">
+                <div class="item" style="background:url(./images/sp05_biz03.png) no-repeat;background-size: cover">
 
                     <div class="txt">
                         <h4>테이터 수집 &amp; 제어</h4>
                         <p>태양광 현황판(CE인증)</p>
                     </div>
                 </div>
-                <div class="item imgFill">
-                    <img src="images/sp05_biz03.png" alt="">
+                <div class="item" style="background:url(./images/sp05_biz03.png) no-repeat;background-size: cover">
 
                     <div class="txt">
                         <h4>테이터 수집 &amp; 제어</h4>
@@ -1701,8 +1696,8 @@
             }, 200);
               $(".conts > div").hide();
             $(".conts > ." + item).show();
-              $('.sp05_mod_finance .flex_wrap').resize() // 팝업 열때 슬라이드 깨짐 방지
             $('.sp05_mod_finance .flex_wrap').slick('refresh'); // 팝업 열때 슬라이드 깨짐 방지
+              $('.sp05_mod_finance .flex_wrap').slick('setPosition');
         });
 
         
