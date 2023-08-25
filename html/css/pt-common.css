@@ -1903,10 +1903,12 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_biz05 .bizDiv{margin-top: 4rem;}
 .sp_mod_biz05 .bizDiv .slick-list{margin: 0 -15px}
 .sp_mod_biz05 .bizDiv .slick-slide{margin: 0 15px}
-.sp_mod_biz05 .bizDiv .item{border-radius: 10px 0 10px 0;padding: 3rem;box-sizing: border-box;color: #fff;height: 420px;word-break: keep-all;position: relative;}
+.sp_mod_biz05 .bizDiv .item{border-radius: 10px 0 10px 0;box-sizing: border-box;color: #fff;height: 420px;word-break: keep-all;position: relative;overflow: hidden}
 .sp_mod_biz05 .bizDiv .item h4{font-size: 2rem;padding-bottom: 1rem;margin-bottom: 1rem;border-bottom: 1px solid #fff}
 .sp_mod_biz05 .bizDiv .item p{font-size: 1.4rem}
 .sp_mod_biz05 .bizDiv .item .txt{position: absolute;left:0;bottom: 3rem;width: 100%;padding: 0 3rem;box-sizing: border-box}
+.sp_mod_biz05 .bizDiv .item .img{width: 100%;height: 100%}
+.sp_mod_biz05 .bizDiv .item img{object-fit: cover;width: 100%;height: 100%}
 .sp_mod_biz05 .slick-arrow:before{display: none !important}
 .sp_mod_biz05 .slick-arrow{width: 21px;height: 43px;}
 .sp_mod_biz05 .slick-arrow.slick-disabled{opacity: 0.2}
@@ -2064,6 +2066,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp05_mod_finance .flex_wrap:not(.slick-slider){display: flex;flex-wrap: wrap;position: relative}
 .sp05_mod_finance .flex_wrap:not(.slick-slider) .fin_layer{width: 100%}
 .sp05_mod_finance .flex_wrap:not(.slick-slider) .top > div{left: 0;transform: none}
+.sp05_mod_finance .flex_wrap.slick-slider .slick-active + .slick-active .fin_layer{left: auto;right: 0}
 .sp05_mod_finance .flex_wrap:not(.slick-slider) > div{width: calc(50% - 15px);position: static}
 .sp05_mod_finance .flex_wrap.slick-slider {z-index: 5}
 
@@ -2108,7 +2111,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp05_mod_finance .slick-prev{background: url(../images/sp05_hs_prev.png) no-repeat;left: -40px}
 .sp05_mod_finance .slick-next{background: url(../images/sp05_hs_next.png) no-repeat;right: -40px}
 .sp05_mod_finance .flex_wrap.on.slick-slider .slick-slide:after{content: '';display: block;background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 5}
-.sp05_mod_finance .flex_wrap.on .slick-arrow:after{content: '';display: block;background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 5}
+
 
 .sp05_finance_wrap{background: url(../images/sp05_fin_bg.png) no-repeat;background-size: cover}
 .sp05_finance_wrap .if_wrap{display: flex;align-items: center;justify-content: space-between}
@@ -2687,13 +2690,14 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp05_mod_emp .new_cnt-container02 .dev:before{top: 30px}
     .sp05_mod_emp .new_cnt-container02 .dev > div:before{top: 24px}
     
-    .sp05_mod_finance .tit > div{width: 100%;}
+    .sp05_mod_finance .tit > div{width: 100%;top: 0;}
     
     .sp05_finance_wrap .info_wrap{width: calc(100% - 200px)}
     
     .sp05_mod_emp .join_wrap .join_chart{height: 300px}
     
     .sp05_mod_talent .talent_wrap{width: calc(100% - 30px)}
+    .mt30{margin-top: 2rem}
 }
 
 
@@ -3285,7 +3289,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp05_mod_finance .slick-arrow{display: none}
  
     .sp05_mod_emp .join_wrap .join_chart{height: 250px}
-    .sp05_mod_finance .conts .box > .bb{height: 250px}
+    .sp05_mod_finance .conts .box > .bb{height: 280px}
     
     .sp05_mod_review .item{padding: 2rem}
     .sp05_mod_review .item .ico{width: 85px;}

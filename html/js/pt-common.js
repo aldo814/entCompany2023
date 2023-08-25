@@ -913,15 +913,16 @@ $(document).ready(function () {
                         settings: {
                             slidesToShow: 2,
 
+                        }
                         },
-                    },{
-                         breakpoint: 480,
+                    {
+                        breakpoint: 480,
                         settings: {
                             slidesToShow: 1,
 
                         }
-                       }
-                        ]
+                  },
+            ]
     });
 
     $('.sp_mod_comview05 .img_wrap').slick({
@@ -938,7 +939,8 @@ $(document).ready(function () {
                         settings: {
                             slidesToShow: 1,
                             centerMode: false,
-                            centerPadding: '0'
+                            centerPadding: '0',
+                            variableWidth: false,
 
                         },
                         },
@@ -1006,17 +1008,39 @@ $(document).ready(function () {
     });
 
 
-    $('.sp05_mod_finance  .tit a').click(function () {
-        $(this).parent().children('div').show();
+   $('.sp05_mod_finance .conts').on('click', 'a', function() {
+        var $slide = $(this).closest('.slick-slide');
+        var $popup = $slide.find('.fin_layer');
+
+        // 해당 슬라이드의 팝업 토글
+        $popup.show(); // 팝업 열기/닫기를 토글할 수 있습니다.
+       $('.shadow').show();
+       $('.sp05_mod_finance .flex_wrap').addClass('on');
+    });
+    
+     $('.sp05_mod_finance .conts').on('click', '.close', function() {
+        var $slide = $(this).closest('.slick-slide');
+        var $popup = $slide.find('.fin_layer');
+         
+        $('.shadow').hide();
+        $('.sp05_mod_finance .flex_wrap').removeClass('on');
+        // 해당 슬라이드의 팝업 닫기
+        $popup.hide();
+    });
+    
+    $('.sp05_mod_finance .conts > div:not(.slick-slide)').on('click', 'a', function() {
+        $(this).closest('.tit').find('.fin_layer').show();
         $('.sp05_mod_finance .flex_wrap').addClass('on');
         $('.shadow').show();
     });
-
-    $('.sp05_mod_finance .tit .in_top a').click(function () {
+    
+     $('.sp05_mod_finance .conts > div:not(.slick-slide)').on('click', '.close', function() {
         $('.fin_layer').hide();
         $('.shadow').hide();
         $('.sp05_mod_finance .flex_wrap').removeClass('on');
     });
+
+
 
 if (window.innerWidth < 768) {
     $('.fin_wrap:not(.slick-slider)').each(function () {
@@ -1039,10 +1063,7 @@ if (window.innerWidth < 768) {
                 chart8.resize();
                 chart9.resize();
             }, 200);
-    
-    
-    $(".imgFill").imgLiquid();
-    
+
 }
     
     $('.sp05_mod_culture .culwel_wrap').slick({
