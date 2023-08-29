@@ -1065,14 +1065,14 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_product02 .item h3{font-size: 5rem;margin-bottom: 1.5rem;margin-top: 15rem}
 .sp_mod_product02 .item h4{font-size: 3.4rem;margin-bottom: 1rem;color: #1c479e}
 .sp_mod_product02 .item p{font-size: 1.4rem;color: #666;}
-.sp_mod_product02 .item .txt{width: 40%;word-break: keep-all;margin-right: 20px;}
-.sp_mod_product02 .item .img{width: calc(60% - 20px);}
+.sp_mod_product02 .item .txt{width: 60%;word-break: keep-all;margin-right: 20px;}
+.sp_mod_product02 .item .img{width: calc(40% - 20px);}
 .sp_mod_product02 .item .img img{width: 100%;object-fit: cover;max-height: 400px;}
 .sp_mod_product02 .slick-prev, 
 .sp_mod_product02 .slick-next{width: 62px;height: 83px}
 .sp_mod_product02 .slick-prev:before, 
 .sp_mod_product02 .slick-next:before{display: none}
-.sp_mod_product02 .slick-prev{background: url(../images/sp02_pro_prev.png) no-repeat center #1c479e;left: calc(40% - 10px);z-index: 55}
+.sp_mod_product02 .slick-prev{background: url(../images/sp02_pro_prev.png) no-repeat center #1c479e;left: calc(60% - 10px);z-index: 55}
 .sp_mod_product02 .slick-next{background: url(../images/sp02_pro_next.png) no-repeat center #1c479e;right: -31px;}
 .sp_mod_product02 .slider-container{position: absolute;left: 40%;bottom: 7rem;;font-weight: 500;color: #898989}
 .sp_mod_product02 .active{font-size: 3rem;color: #f68a1e;font-weight: bold}
@@ -1300,7 +1300,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp02_mod_strategy .slick-dots li button{opacity: 1;width: 15px;height: 15px;background: #8591a5}
 .sp02_mod_strategy .slick-active button{border-radius: 30px;width: 45px !important;background: #000 !important}
 
-.sp02_mod_strategy .rq_cont{display: flex;padding: 4rem;box-sizing: border-box;border-radius: 10px;border: 1px solid #013281;background: #fff;margin-top: -8rem}
+.sp02_mod_strategy .rq_cont{display: flex;padding: 4rem;box-sizing: border-box;border-radius: 10px;border: 1px solid #013281;background: #fff;margin-top: -7rem}
 .sp02_mod_strategy .rq_cont .rq_tit{font-size: 3rem;color: #013281;font-weight:600;width: 240px;}
 .sp02_mod_strategy .rq_cont .rq_text{width: calc(100% - 240px);}
 .sp02_mod_strategy .rq_cont .rq_text p{font-weight: 500;font-size: 1.8rem;margin-bottom: 1rem;position: relative;padding-left: 30px;}
