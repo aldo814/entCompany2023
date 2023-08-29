@@ -2177,7 +2177,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp05_mod_process .list dt{font-weight: bold;font-size: 2.2rem;margin-bottom: 1rem}
 .sp05_mod_process .list dd{font-size: 1.8rem;color: #666666;word-break: keep-all}
 
-.sp_rep_Img06{padding: 10rem 0;color: #fff}
+.sp_rep_Img06{padding: 10rem 0;color: #fff !important}
 .sp_rep_Img06 .cnt-container{position: relative;}
 .sp_rep_Img06 .bigTit{font-size: 6rem;max-width: calc(100% - 250px)}
 .sp_rep_Img06 .subTit{font-size: 4rem;max-width: calc(100% - 250px)}
