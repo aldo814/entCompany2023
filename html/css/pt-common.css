@@ -2181,8 +2181,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_rep_Img06 .cnt-container{position: relative;}
 .sp_rep_Img06 .bigTit{font-size: 6rem;max-width: calc(100% - 250px)}
 .sp_rep_Img06 .subTit{font-size: 4rem;max-width: calc(100% - 250px)}
-.sp_rep_Img06 .box{background: rgba(0, 0, 0, 0.49);margin-top: 10rem;padding: 1.5rem 3rem;max-width: calc(800px);width: 100%;box-sizing: border-box}
-.sp_rep_Img06 .box li{display: flex;font-size: 1.8rem;margin-bottom: 1.5rem;}
+.sp_rep_Img06 .box{background: rgba(0, 0, 0, 0.49);margin-top: 10rem;padding: 1.5rem 3rem;max-width: calc(800px);width: 100%;box-sizing: border-box;border: 0 !important;border-radius: 0}
+.sp_rep_Img06 .box li{display: flex;font-size: 1.8rem;margin-bottom: 1.5rem;color: #fff !important}
 .sp_rep_Img06 .box li:last-child{margin-bottom: 0}
 .sp_rep_Img06 .box li strong{font-weight: 400;width: 120px;margin-right: 1.5rem;padding-right: 1.5rem;border-right: 1px solid #fff;box-sizing: border-box}
 .sp_rep_Img06 .box li p {width: calc(100% - 120px);word-break: keep-all}
