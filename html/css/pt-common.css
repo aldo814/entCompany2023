@@ -329,7 +329,7 @@ a{color: inherit;text-decoration: none}
 
 
 .a_mod_job .tabs{display: flex;flex-wrap: wrap}
-.a_mod_job .tabs li{width: 14.285%;text-align: center;border: 1px solid #ddd;box-sizing: border-box;border-right: 0;padding: 33px 0 17px}
+.a_mod_job .tabs li{width: 14.285%;text-align: center;border: 1px solid #ddd;box-sizing: border-box;border-right: 0;padding: 33px 0 17px;font-size: 1.5rem;;letter-spacing: -.5px}
 .a_mod_job .tabs li:nth-child(7n){border-right: 1px solid #ddd}
 .a_mod_job .tabs li:nth-child(n+8):nth-child(-n+21){border-top: 0}
 .a_mod_job .tabs li p{margin-top: 1rem}
