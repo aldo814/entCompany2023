@@ -1371,7 +1371,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp03_mod_basic .box dl:last-child{margin-bottom: 0}
 .sp03_mod_basic .box dl:nth-child(2n){margin-right: 0}
 .sp03_mod_basic .box dl.w100{width: 100%;margin-top: 2rem;padding-top: 3.5rem;border-top: 1px solid #cecece;}
-.sp03_mod_basic .box dt {width: 110px;margin-right: 10px;font-weight: 500;}
+.sp03_mod_basic .box dt {width: 115px;margin-right: 10px;font-weight: 500;}
 .sp03_mod_basic .box dd {width: calc(100% - 120px);font-weight: 300;color: #666666;word-break: keep-all}
 
 .sp_mod_history03 .history{margin-top:72px;}
@@ -3297,4 +3297,6 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp05_mod_review .item .ico{width: 85px;}
     .sp05_mod_review .item .ico img{width: 70px}
     .sp05_mod_review .item .txt{width: calc(100% - 85px);padding-left: 15px}
+    
+    .sp03_mod_product .product h4{width: 160px;height: 160px}
 }
