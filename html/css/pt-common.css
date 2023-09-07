@@ -2204,7 +2204,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp03_mod_product .product > .item:nth-child(4n){margin-right: 0}
 .sp03_mod_product .product > .item:nth-child(-n + 4){margin-top: 0}
 .sp03_mod_product .product .ico{display: flex;justify-content: center;align-items: center;background: #f6f6f6;border-radius: 50%;width: 220px;height: 220px;margin: 0 auto 2rem auto;display: none}
-.sp03_mod_product .product  h4{text-align: center;font-size: 2.4rem;font-weight: 400;display: flex;justify-content: center;align-items: center;background: #f6f6f6;border-radius: 50%;width: 220px;height: 220px;padding: 1rem;box-sizing: border-box;word-break: keep-all;font-weight: 500}
+.sp03_mod_product .product  h4{text-align: center;font-size: 2.4rem;font-weight: 400;display: flex;justify-content: center;align-items: center;background: #f6f6f6;border-radius: 50%;width: 220px;height: 220px;padding: 1rem;box-sizing: border-box;font-weight: 500}
 
 .com_mod_header.fixed.sp_rep_Img06{padding: 3rem 0;box-sizing: border-box}
 .com_mod_header.fixed.sp_rep_Img06 .box{display: none}
