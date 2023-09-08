@@ -1055,17 +1055,7 @@ $moreButton.click(function (e) {
     $(".sp_mod_history03 .history > div:hidden").slice(0, 5).show().fadeIn(200);
 
     if (currentIndex >= totalItems) {
-        // 모든 항목 표시 후 버튼 변경
-        if ($moreButton.text() === "펼쳐보기") {
-            $moreButton.text("접어보기");
-            $(".sp_mod_history03 .history > div").css("display", "none");
-    $(".sp_mod_history03 .history > div:hidden").slice(0, 5).css("display", "flex");
-            $moreButton.addClass('active')
-        } else {
-            $moreButton.text("펼쳐보기");
-            currentIndex = 0; // 초기화
-            $moreButton.removeClass('active')
-        }
+        $moreButton.hide()
     }
 });
 
