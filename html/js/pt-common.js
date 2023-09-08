@@ -1048,6 +1048,11 @@ var $moreButton = $(".more_view");
 // 초기에 전체 항목을 표시
 $(".sp_mod_history03 .history > div").css("display", "none");
     $(".sp_mod_history03 .history > div:hidden").slice(0, 5).css("display", "flex");
+    
+        
+    if($(".sp_mod_history03 .history > div").length < 5){
+        $('.more_view').hide();
+}
 
 $moreButton.click(function (e) {
     currentIndex += itemsPerPage;
@@ -1059,6 +1064,7 @@ $moreButton.click(function (e) {
     if($(".sp_mod_history03 .history > div:hidden").length == 0){ // 컨텐츠 남아있는지 확인
             $moreButton.fadeOut(100); // 컨텐츠 없을 시 버튼 사라짐
         }
+
 });
 
 
