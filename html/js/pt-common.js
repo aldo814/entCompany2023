@@ -853,28 +853,28 @@ $(document).ready(function () {
         centerMode: true,
         centerPadding: '100px',
         responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 5,
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
 
-                        }
-                        },
-                    {
-                        breakpoint: 769,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 1,
-
-                        }
+                }
                         },
             {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
 
-                        }
+                }
+                        },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                }
                         }
                     ]
     });
@@ -885,19 +885,19 @@ $(document).ready(function () {
         slidesToShow: 5,
         infinite: false,
         responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 4,
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
 
-                        }
+                }
                         },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
 
-                        }
+                }
                   },
             ]
     });
@@ -908,19 +908,19 @@ $(document).ready(function () {
         slidesToShow: 3,
         infinite: false,
         responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
 
-                        }
+                }
                         },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
 
-                        }
+                }
                   },
             ]
     });
@@ -934,15 +934,15 @@ $(document).ready(function () {
         variableWidth: true,
         speed: 200,
         responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            centerMode: false,
-                            centerPadding: '0',
-                            variableWidth: false,
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    centerPadding: '0',
+                    variableWidth: false,
 
-                        },
+                },
                         },
                         ]
     });
@@ -1008,81 +1008,110 @@ $(document).ready(function () {
     });
 
 
-   $('.sp05_mod_finance .conts').on('click', 'a', function() {
+    $('.sp05_mod_finance .conts').on('click', 'a', function () {
         var $slide = $(this).closest('.slick-slide');
         var $popup = $slide.find('.fin_layer');
 
         // 해당 슬라이드의 팝업 토글
         $popup.show(); // 팝업 열기/닫기를 토글할 수 있습니다.
-       $('.shadow').show();
-       $('.sp05_mod_finance .flex_wrap').addClass('on');
+        $('.shadow').show();
+        $('.sp05_mod_finance .flex_wrap').addClass('on');
     });
-    
-     $('.sp05_mod_finance .conts').on('click', '.close', function() {
+
+    $('.sp05_mod_finance .conts').on('click', '.close', function () {
         var $slide = $(this).closest('.slick-slide');
         var $popup = $slide.find('.fin_layer');
-         
+
         $('.shadow').hide();
         $('.sp05_mod_finance .flex_wrap').removeClass('on');
         // 해당 슬라이드의 팝업 닫기
         $popup.hide();
     });
-    
-    $('.sp05_mod_finance .conts > div:not(.slick-slide)').on('click', 'a', function() {
+
+    $('.sp05_mod_finance .conts > div:not(.slick-slide)').on('click', 'a', function () {
         $(this).closest('.tit').find('.fin_layer').show();
         $('.sp05_mod_finance .flex_wrap').addClass('on');
         $('.shadow').show();
     });
-    
-     $('.sp05_mod_finance .conts > div:not(.slick-slide)').on('click', '.close', function() {
+
+    $('.sp05_mod_finance .conts > div:not(.slick-slide)').on('click', '.close', function () {
         $('.fin_layer').hide();
         $('.shadow').hide();
         $('.sp05_mod_finance .flex_wrap').removeClass('on');
     });
 
+var itemsPerPage = 5;
+var currentIndex = 0;
+var totalItems = $(".sp_mod_history03 .history > div").length;
+var $moreButton = $(".more_view");
+
+// 초기에 전체 항목을 표시
+$(".sp_mod_history03 .history > div").css("display", "none");
+    $(".sp_mod_history03 .history > div:hidden").slice(0, 5).css("display", "flex");
+
+$moreButton.click(function (e) {
+    currentIndex += itemsPerPage;
+
+    $(".sp_mod_history03 .history > div:hidden").slice(0, 5).show().fadeIn(200);
+
+    if (currentIndex >= totalItems) {
+        // 모든 항목 표시 후 버튼 변경
+        if ($moreButton.text() === "펼쳐보기") {
+            $moreButton.text("접어보기");
+            $(".sp_mod_history03 .history > div").css("display", "none");
+    $(".sp_mod_history03 .history > div:hidden").slice(0, 5).css("display", "flex");
+            $moreButton.addClass('active')
+        } else {
+            $moreButton.text("펼쳐보기");
+            currentIndex = 0; // 초기화
+            $moreButton.removeClass('active')
+        }
+    }
+});
 
 
-if (window.innerWidth < 768) {
-    $('.fin_wrap:not(.slick-slider)').each(function () {
-        $(this).slick({
+
+    if (window.innerWidth < 768) {
+        $('.fin_wrap:not(.slick-slider)').each(function () {
+            $(this).slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 setPosition: 0,
 
             });
-    });
-    
-    
-     setTimeout(function() {
-                chart2.resize();
-                chart3.resize();
-                chart4.resize();
-                chart5.resize();
-                chart6.resize();
-                chart7.resize();
-                chart8.resize();
-                chart9.resize();
-            }, 200);
+        });
 
-}
-    
+
+        setTimeout(function () {
+            chart2.resize();
+            chart3.resize();
+            chart4.resize();
+            chart5.resize();
+            chart6.resize();
+            chart7.resize();
+            chart8.resize();
+            chart9.resize();
+        }, 200);
+
+    }
+
     $('.sp05_mod_culture .culwel_wrap').slick({
-                slidesToShow: 3,
-        dots:false,
-        arrows:true,
-         responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
+        slidesToShow: 3,
+        dots: false,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
 
-                        }
+                }
                         }
              ]
 
-            });
-    
-       var heightArray3 = $(".sp05_mod_culture .desc").map(function () {
+    });
+
+    var heightArray3 = $(".sp05_mod_culture .desc").map(function () {
 
         return $(this).height();
 
@@ -1091,8 +1120,8 @@ if (window.innerWidth < 768) {
     var maxHeight3 = Math.max.apply(Math, heightArray3);
 
     $(".sp05_mod_culture .desc").height(maxHeight3);
-    
-    
+
+
 
 });
 
@@ -1100,19 +1129,19 @@ if (window.innerWidth < 768) {
 
 
 $(window).resize(function () {
-    
-    
-     setTimeout(function() {
-                chart2.resize();
-                chart3.resize();
-                chart4.resize();
-                chart5.resize();
-                chart6.resize();
-                chart7.resize();
-                chart8.resize();
-                chart9.resize();
-            }, 200);
-    
+
+
+    setTimeout(function () {
+        chart2.resize();
+        chart3.resize();
+        chart4.resize();
+        chart5.resize();
+        chart6.resize();
+        chart7.resize();
+        chart8.resize();
+        chart9.resize();
+    }, 200);
+
     $('.sp_mod_comview04 .item img').each(function () {
         var height1 = $('.sp_mod_comview04 .item img:nth-child(1)').outerHeight();
         var height2 = $('.sp_mod_comview04 .item img:nth-child(2)').outerHeight();
@@ -1120,57 +1149,55 @@ $(window).resize(function () {
         $('.sp_mod_comview04 .item').css('height', height1 + height2 + 69)
     })
 
-    
-if (window.innerWidth < 768) {
-    
-     setTimeout(function() {
-                chart2.resize();
-                chart3.resize();
-                chart4.resize();
-                chart5.resize();
-                chart6.resize();
-                chart7.resize();
-                chart8.resize();
-                chart9.resize();
-            }, 200);
-    
-    $('.fin_wrap:not(.slick-slider)').each(function () {
-        $(this).slick({
+
+    if (window.innerWidth < 768) {
+
+        setTimeout(function () {
+            chart2.resize();
+            chart3.resize();
+            chart4.resize();
+            chart5.resize();
+            chart6.resize();
+            chart7.resize();
+            chart8.resize();
+            chart9.resize();
+        }, 200);
+
+        $('.fin_wrap:not(.slick-slider)').each(function () {
+            $(this).slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 setPosition: 0,
 
             });
-    });
-    
-    
-    $('.sp05_mod_finance .flex_wrap:not(.slick-slider)').each(function () {
-        $(this).slick({
+        });
+
+
+        $('.sp05_mod_finance .flex_wrap:not(.slick-slider)').each(function () {
+            $(this).slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 setPosition: 0,
 
             });
-    });
-} else {
-    $('.fin_wrap').each(function () {
-        // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
-        var childDivCount = $(this).children().children().children('.slick-slide').length;
-        if (childDivCount < 6) {
-            $(this).slick('unslick'); 
-        } else{
-        }
-    });
-    
-    $('.sp05_mod_finance').each(function () {
-        // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
-        var childDivCount = $(this).children().children().children('.slick-slide').length;
-        if (childDivCount < 6) {
-            $(this).slick('unslick'); 
-        } else{
-        }
-    });
-}
+        });
+    } else {
+        $('.fin_wrap').each(function () {
+            // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
+            var childDivCount = $(this).children().children().children('.slick-slide').length;
+            if (childDivCount < 6) {
+                $(this).slick('unslick');
+            } else {}
+        });
+
+        $('.sp05_mod_finance').each(function () {
+            // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
+            var childDivCount = $(this).children().children().children('.slick-slide').length;
+            if (childDivCount < 6) {
+                $(this).slick('unslick');
+            } else {}
+        });
+    }
 
     if (window.innerWidth > 999) {
 
@@ -1185,7 +1212,7 @@ if (window.innerWidth < 768) {
         });
 
     }
-    
+
     var heightArray = $(".sp_mod_biz04 .txt").map(function () {
 
         return $(this).height();
@@ -1206,7 +1233,7 @@ if (window.innerWidth < 768) {
     var maxHeight2 = Math.max.apply(Math, heightArray2);
 
     $(".sp_mod_biz05 .txt").height(maxHeight2);
-    
+
     var heightArray3 = $(".sp05_mod_culture .desc").map(function () {
 
         return $(this).height();
@@ -1216,8 +1243,8 @@ if (window.innerWidth < 768) {
     var maxHeight3 = Math.max.apply(Math, heightArray3);
 
     $(".sp05_mod_culture .desc").height(maxHeight3);
-    
-    
-    
-    
+
+
+
+
 }).resize();
