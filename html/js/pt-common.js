@@ -1054,9 +1054,11 @@ $moreButton.click(function (e) {
 
     $(".sp_mod_history03 .history > div:hidden").slice(0, 5).show().fadeIn(200);
 
-    if (currentIndex >= totalItems) {
-        $moreButton.hide()
-    }
+ 
+    
+    if($(".sp_mod_history03 .history > div:hidden").length == 0){ // 컨텐츠 남아있는지 확인
+            $moreButton.fadeOut(100); // 컨텐츠 없을 시 버튼 사라짐
+        }
 });
 
 
