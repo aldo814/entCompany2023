@@ -2182,7 +2182,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp05_mod_process .list dt{font-weight: bold;font-size: 2.2rem;margin-bottom: 1rem}
 .sp05_mod_process .list dd{font-size: 1.8rem;color: #666666;word-break: keep-all}
 
-.sp_rep_Img06{padding: 10rem 0;color: #fff !important}
+.sp_rep_Img06{padding:  3.35rem 0;color: #fff !important;}
 .sp_rep_Img06 .cnt-container{position: relative;}
 .sp_rep_Img06 .bigTit{font-size: 6rem;max-width: calc(100% - 250px)}
 .sp_rep_Img06 .subTit{font-size: 4rem;max-width: calc(100% - 250px)}
@@ -3025,7 +3025,6 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .new_com_mod_header .action a i{margin-left: 5px;width: 20px;height: 20px;font-size: 1.4rem;line-height: 20px}
     .new_com_mod_header.sty02{padding: 20px 0}
     
-    .sp_rep_Img06{padding: 5rem 0}
     .sp_rep_Img06 .bigTit{font-size: 4rem;max-width: calc(100% - 150px)}
     .sp_rep_Img06 .subTit{font-size: 3rem;max-width: calc(100% - 150px)}
     .sp_rep_Img06 .action{width: 130px}
