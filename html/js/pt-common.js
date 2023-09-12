@@ -47,6 +47,7 @@ $(document).ready(function () {
     var lastId,
         topMenu = $(".com_mod_anchor"),
         topMenu02 = $(".com_mod_header"),
+        topMenu03 = $(".com_mod_header.fixed").outerHeight,
         topMenuHeight = topMenu.outerHeight() + topMenu02.outerHeight() + 15,
 
         menuItems = topMenu.find("a"),
