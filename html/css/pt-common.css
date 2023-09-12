@@ -2198,7 +2198,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_rep_Img06 .action a:not(#hp){background: #000}
 .sp_rep_Img06 .action a i{font-style: normal;color: #ff2121;margin-left: 1.5rem}
 .sp_rep_Img06 .action #hp{border: 1px solid #fff}
-
+.sp_rep_Img06 #copyUrlNew i{display: none}
 .sp03_finance_biz h3{margin-bottom: 2rem}
 .sp03_finance_biz  p{font-size: 1.8rem;color: #555}
 
@@ -2226,7 +2226,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp03_mod_product .product > .item:nth-child(29)  h4{background: #f2f2f2}
 .sp03_mod_product .product > .item:nth-child(31)  h4{background: #f2f2f2}
 
-.com_mod_header.fixed.sp_rep_Img06{padding: 3rem 0;box-sizing: border-box}
+.com_mod_header.fixed.sp_rep_Img06{padding: 3rem 0;box-sizing: border-box;height: auto}
+.com_mod_header.fixed.sp_rep_Img06 .txt{position: static;transform: none}
 .com_mod_header.fixed.sp_rep_Img06 .box{display: none}
 .com_mod_header.fixed.sp_rep_Img06 .bigTit{font-size: 2rem;}
 .com_mod_header.fixed.sp_rep_Img06 .bigTit img{max-width: 200px}
