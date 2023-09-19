@@ -1049,10 +1049,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_biz02 .slick-next{background: url(../images/sp02_biz_next.png) no-repeat;right: -70px}
 .sp_mod_comview02 .img_wrap{margin-bottom: 5rem}
 .sp_mod_comview02 .img_wrap{overflow: hidden}
-.sp_mod_comview02 .item{display: grid; grid-template-columns: repeat(3, 1fr);row-gap: 40px;/* row의 간격을 10px로 */column-gap: 20px;}
-.sp_mod_comview02 .item img{width: 100%}
-.sp_mod_comview02 .item img:nth-child(1){grid-row: 1 / span 2;}
-.sp_mod_comview02 .item img:nth-child(3){grid-column: 3 ;grid-row: 1 / span 2;}
+.sp_mod_comview02 .img_wrap img{max-width: 100%}
 .sp_mod_comview02 .swiper-pagination{position: static;margin-top: 5rem;margin-bottom: 8rem}
 .sp_mod_comview02 .swiper-pagination span{width: 15px;height: 15px;opacity: 1;background: #b9b9b9;margin: 0 1.5rem}
 .sp_mod_comview02 .swiper-pagination .swiper-pagination-bullet-active{width:50px;border-radius: 30px;background: #212121;}
@@ -2451,7 +2448,6 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp_mod_history02 .tabs li{width: 33.333%;text-align: center;}
     .sp_mod_history02 .history{background: #fff;}
     
-    .sp_mod_comview02 .item{row-gap:24px}
     
     .sp_mod_product02 .sp_tit02{margin-bottom: 7rem}
     .sp_mod_product02 .product {background: #fff;padding: 4rem 3rem;}
@@ -2890,11 +2886,6 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     
     .sp_mod_history02 .history > .item{padding: 3rem 2rem;}
     
-    .sp_mod_comview02 .item{grid-template-columns:repeat(2, 1fr)}
-    .sp_mod_comview02 .item img:nth-child(1){order: 1}
-    .sp_mod_comview02 .item img:nth-child(2){order: 3}
-    .sp_mod_comview02 .item img:nth-child(3){order: 2;grid-column: 2}
-    .sp_mod_comview02 .item img:nth-child(4){order: 4}
     
     .sp_mod_product02 .item{flex-direction: column-reverse;}
     .sp_mod_product02 .item .img{width: 100%;margin-bottom: 2rem;}
