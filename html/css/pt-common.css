@@ -898,7 +898,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_interview {overflow: hidden}
 .sp_mod_interview h3{font-size: 2.8rem;margin-top: 7rem}
 .sp_mod_interview .cont{display: flex;justify-content: space-between;padding: 7.6rem 10rem 6rem 10rem;position: relative;}
-.sp_mod_interview .cont .img{width: 416px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.sp_mod_interview .cont .img img{width: 100%;height: 100%}
+.sp_mod_interview .cont .img{width: 250px;height: 240px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
 .sp_mod_interview .cont .txt{width: calc(100% - 476px);word-break: keep-all}
 .sp_mod_interview .cont .tit{font-size:4.2rem;font-weight: 600;word-break: keep-all;margin-bottom: 2rem;}
 .sp_mod_interview .cont .desc{font-size: 1.8rem;}
@@ -2451,7 +2452,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     
     .sp_mod_interview .cont{display: block;padding-bottom: 0}
     .sp_mod_interview .cont .txt{width: 100%;margin-bottom: 3rem;}
-    .sp_mod_interview .cont .img{position: static;width: 300px;margin: auto;transform: none;}
+    .sp_mod_interview .cont .img{position: static;margin: auto;transform: none;}
     .sp_mod_interview .cont .img img{width: 100%;}
     .sp_mod_interview .slick-next{right: 0;}
     
