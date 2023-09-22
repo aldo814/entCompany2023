@@ -1102,6 +1102,12 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_keyValue{background: url(../images/sp_kv_bg.png) no-repeat;background-size: cover}
 .sp_mod_keyValue h3{color: #fff}
 .sp_mod_keyValue .keyValue_wrap{display: flex;justify-content: center;}
+.sp_mod_keyValue .keyValue_wrap .slick-list{margin: 0 -10px}
+.sp_mod_keyValue .keyValue_wrap .slick-slide{margin: 0 10px}
+.sp_mod_keyValue .keyValue_wrap .slick-arrow:before{display: none}
+.sp_mod_keyValue .keyValue_wrap .slick-arrow{width: 19px;height: 37px;}
+.sp_mod_keyValue .keyValue_wrap .slick-prev{background: url(../images/sp02_pro_prev.png) no-repeat;left: -50px}
+.sp_mod_keyValue .keyValue_wrap .slick-next{background: url(../images/sp02_pro_next.png) no-repeat;right: -50px}
 .sp_mod_keyValue  dl {background: #fff;padding: 3rem;box-sizing: border-box;width: calc(33.333% - 20px);text-align: center;margin-right: 30px}
 .sp_mod_keyValue  dl:last-child{margin-right: 0}
 .sp_mod_keyValue  dl dt{font-size: 2.4rem;font-weight: 500;}
@@ -2284,6 +2290,10 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp_mod_biz04 .slick-next{right: 0}
     
     .sp05_mod_kt > div > div{max-width: 540px;width: calc(100% - 20px)}
+    
+    .sp_mod_keyValue .keyValue_wrap{padding: 0 50px}
+    .sp_mod_keyValue .keyValue_wrap .slick-next{right: 0}
+    .sp_mod_keyValue .keyValue_wrap .slick-prev{left: 0}
     
 }
 

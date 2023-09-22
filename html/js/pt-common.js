@@ -367,6 +367,7 @@ $(document).ready(function () {
                         },
                     }
                 });
+    
 
 
                 $('.b_mod_product .tab_content:first').show();
@@ -386,6 +387,29 @@ $(document).ready(function () {
                     arrows: false,
                     dots: true,
                     responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+
+                            }
+                        }
+                    ]
+
+                });
+    
+    $('.sp_mod_keyValue .keyValue_wrap').slick({
+                    slidesToShow: 4,
+                    arrows: true,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+
+                            }
+                        },
                         {
                             breakpoint: 768,
                             settings: {
