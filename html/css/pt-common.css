@@ -902,7 +902,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_interview .cont .img{width: 250px;height: 240px;position: absolute;right: 150px;top: 50%;transform: translateY(-50%)}
 .sp_mod_interview .cont .txt{width: calc(100% - 476px);word-break: keep-all}
 .sp_mod_interview .cont .tit{font-size:4.2rem;font-weight: 600;word-break: keep-all;margin-bottom: 2rem;}
-.sp_mod_interview .cont .desc{font-size: 1.8rem;}
+.sp_mod_interview .cont .desc{font-size: 1.8rem;max-width: calc(100% - 200px)}
 .sp_mod_interview .white_box{background: #fff;padding: 4rem 8rem;position: relative;min-height: 200px}
 .sp_mod_interview .slick-prev,
 .sp_mod_interview .slick-next{z-index: 5}
