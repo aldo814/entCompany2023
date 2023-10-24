@@ -1388,7 +1388,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp03_mod_basic .box dl:nth-child(2n){margin-right: 0}
 .sp03_mod_basic .box dl.w100{width: 100%;margin-top: 2rem;padding-top: 3.5rem;border-top: 1px solid #cecece;}
 .sp03_mod_basic .box dt {width: 115px;margin-right: 10px;font-weight: 500;}
-.sp03_mod_basic .box dd {width: calc(100% - 120px);font-weight: 300;color: #666666;word-break: keep-all}
+.sp03_mod_basic .box dd {width: calc(100% - 120px);font-weight: 300;color: #666666;}
 
 .sp_mod_history03 .more_view{border-top: 1px solid #eeee;background: #f7f7f7;text-align: center;display: block;padding: 1rem;position: relative;color: #5e5e5e;font-size: 1.4rem; ;}
 .sp_mod_history03 .more_view:after{content: '';display: block;background: url(/resource/images/entCntnts/more_view.png) no-repeat;width: 14px;height: 7px;margin: 5px auto 0 auto}
