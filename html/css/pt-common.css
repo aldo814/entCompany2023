@@ -1103,24 +1103,40 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_vision_wrap02 .item:hover{background: #0096ff;box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);margin-top: -30px}
 .sp_vision_wrap02 .item:hover:before{content: '';display: block;background: url(/resource/images/entCntnts/sp02_mission_ico.png) no-repeat;width: 109px;height: 52px;position: absolute;left: 50%;top: 6rem;transform: translateX(-50%)}
 
-.sp_mod_keyValue{background: url(/resource/images/entCntnts/sp_kv_bg.png) no-repeat;background-size: cover}
+.sp_mod_keyValue{background: url(/resource/images/entCntnts/sp_kv_bg.png) no-repeat;background-size: cover;}
 .sp_mod_keyValue h3{color: #fff}
 .sp_mod_keyValue .keyValue_wrap{display: flex;justify-content: center;}
-.sp_mod_keyValue  dl {background: #fff;padding: 3rem;box-sizing: border-box;width: calc(33.333% - 20px);text-align: center;margin-right: 30px}
+.sp_mod_keyValue  dl {background: #fff;padding: 3rem;box-sizing: border-box;width: calc(33.333% - 20px);text-align: center;margin-right: 30px;height: 100%}
 .sp_mod_keyValue  dl:last-child{margin-right: 0}
 .sp_mod_keyValue  dl dt{font-size: 2.4rem;font-weight: 500;}
 .sp_mod_keyValue  dl dt:after{content: '';display: block;width: 50px;height: 4px;background: #0c2155;margin: 2rem auto}
 .sp_mod_keyValue  dl dd{font-size: 1.8rem}
+.sp_mod_keyValue .keyValue_wrap .slick-track{display: flex;justify-content: center}
+.sp_mod_keyValue .keyValue_wrap  .slick-list {margin: 0 -10px}
+.sp_mod_keyValue .keyValue_wrap  .slick-slide {margin: 0 10px;height: auto}
+.sp_mod_keyValue .keyValue_wrap  .slick-slide > div{height: 100%}
+.sp_mod_keyValue .slick-next{background: url(https://www.jobaba.net/resource/images/entCntnts/sp02_pro_next.png) no-repeat;right: -80px;width: 19px;height: 37px}
+.sp_mod_keyValue .slick-prev{background: url(https://www.jobaba.net/resource/images/entCntnts/sp02_pro_prev.png) no-repeat;left: -80px;width: 19px;height: 37px}
+.sp_mod_keyValue .slick-prev:before,
+.sp_mod_keyValue .slick-next:before{display: none}
 
-.sp_mod_keyTask .keyTask{display: flex;justify-content: center;}
-.sp_mod_keyTask .keyTask > div{width: calc(33.333% - 20px);text-align: center;margin-right: 30px}
-.sp_mod_keyTask .keyTask > div:last-child{margin-right: 0}
+.sp_mod_keyTask .keyTask > div{text-align: center;}
+.sp_mod_keyTask .keyTask .slick-list {margin: 0 -10px}
+.sp_mod_keyTask .keyTask .slick-slide {margin: 0 10px}
+.sp_mod_keyTask .keyTask .slick-track{display: flex;justify-content: center}
 .sp_mod_keyTask .keyTask > div .ico{width: 120px;height: 120px;text-align: center;border-radius: 50%;position: relative;margin: 0 auto 2rem auto}
 .sp_mod_keyTask .keyTask > div:nth-child(1) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
 .sp_mod_keyTask .keyTask > div:nth-child(2) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
 .sp_mod_keyTask .keyTask > div:nth-child(3) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask > div:nth-child(4) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask > div:nth-child(5) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
 .sp_mod_keyTask .keyTask .num{background: #fff;color: #0c2155;border: 1px solid #0c2155;width: 45px;height: 45px;font-size: 2.2rem;display: flex;justify-content: center;align-items: center;position: absolute;left: 0;border-radius: 50%;font-weight: 500}
 .sp_mod_keyTask .keyTask p{font-size: 2.2rem;}
+.sp_mod_keyTask .slick-prev, .sp_mod_keyTask .slick-next{width: 30px;height: 58px}
+.sp_mod_keyTask .slick-next{background: url(https://www.jobaba.net/resource/images/entCntnts/sp_itv_next.png) no-repeat;right: -80px}
+.sp_mod_keyTask .slick-prev{background: url(https://www.jobaba.net/resource/images/entCntnts/sp_itv_prev.png) no-repeat;left: -80px}
+.sp_mod_keyTask .slick-prev:before,
+.sp_mod_keyTask .slick-next:before{display: none}
 
 .sp_mod_swot .swot_wrap{display: flex;flex-wrap: wrap;}
 .sp_mod_swot .swot_wrap > div {width: calc(50% - 20px);margin-right: 40px;display: flex;align-items: center;margin-top: 40px}
@@ -2288,6 +2304,14 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp_mod_biz04 .slick-next{right: 0}
 
     .sp05_mod_kt > div > div{max-width: 540px;width: calc(100% - 20px)}
+    
+    .sp_mod_keyValue .keyValue_wrap{padding: 0 50px;}
+    .sp_mod_keyValue .slick-next{right: 0}
+    .sp_mod_keyValue .slick-prev{left: 0}
+    
+    .sp_mod_keyTask .keyTask{padding: 0 30px}
+    .sp_mod_keyTask .slick-next{right: 0;background-size: 15px;width: 15px;height: 30px}
+    .sp_mod_keyTask .slick-prev{left: 0;background-size: 15px;width: 15px;height: 30px}
 
 }
 
