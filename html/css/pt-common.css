@@ -1125,11 +1125,16 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_keyTask .keyTask .slick-slide {margin: 0 10px}
 .sp_mod_keyTask .keyTask .slick-track{display: flex;justify-content: center}
 .sp_mod_keyTask .keyTask > div .ico{width: 120px;height: 120px;text-align: center;border-radius: 50%;position: relative;margin: 0 auto 2rem auto}
-.sp_mod_keyTask .keyTask > div:nth-child(1) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask > div:nth-child(2) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask > div:nth-child(3) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask > div:nth-child(4) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask > div:nth-child(5) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(1) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(2) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(3) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(4) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(5) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(6) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(7) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(8) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(9) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(10) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
 .sp_mod_keyTask .keyTask .num{background: #fff;color: #0c2155;border: 1px solid #0c2155;width: 45px;height: 45px;font-size: 2.2rem;display: flex;justify-content: center;align-items: center;position: absolute;left: 0;border-radius: 50%;font-weight: 500}
 .sp_mod_keyTask .keyTask p{font-size: 2.2rem;}
 .sp_mod_keyTask .slick-prev, .sp_mod_keyTask .slick-next{width: 30px;height: 58px}
