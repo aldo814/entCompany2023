@@ -444,6 +444,31 @@ $(document).ready(function () {
                     ]
 
                 });
+    
+        /*추가 */
+    $('.sp_mod_talent .talent_wrap').slick({
+                    slidesToShow: 3,
+                    arrows: true,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+
+                            }
+                        }
+                    ]
+
+                });
+    
 
                 $(".imgFill").imgLiquid();
 
