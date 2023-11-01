@@ -1160,6 +1160,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_keyTask .slick-prev{background: url(https://www.jobaba.net/resource/images/entCntnts/sp_itv_prev.png) no-repeat;left: -80px}
 .sp_mod_keyTask .slick-prev:before,
 .sp_mod_keyTask .slick-next:before{display: none}
+.sp_mod_keyTask .slick-disabled{opacity: 0.3}
 
 .sp_mod_swot .swot_wrap{display: flex;flex-wrap: wrap;}
 .sp_mod_swot .swot_wrap > div {width: calc(50% - 20px);margin-right: 40px;display: flex;align-items: center;margin-top: 40px}
