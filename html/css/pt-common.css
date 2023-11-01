@@ -549,7 +549,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dt{width:15%;}
     .com_mod_recruit.sty01 .box_recruit .detail_wrap dl dd{width:85%;}
 
-.com_mod_news.sty01{margin:7rem 0;}
+.com_mod_news.sty01{margin:7rem 0;padding: 0 !important}
     .com_mod_news.sty01 .news_row{padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid #dcdcdc;}
     .com_mod_news.sty01 .news_row a.tit{font-size:18px;color:#000;font-weight:500;}
     .com_mod_news.sty01 .news_row .desc{margin:20px 0 32px;color:#666;font-size:14px;}
@@ -1035,7 +1035,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_rep_Img02 .txt .subTit{font-size: 3rem;}
 .sp_rep_Img02 .txt .bigTit{font-size: 7rem;}
 
-.sp_mod_history02{background: url(/resource/images/entCntnts/sp02_history_bg.png) no-repeat center top 50px;padding-top: 15rem}
+.sp_mod_history02{background: url(https://www.jobaba.net/resource/images/entCntnts/sp02_history_bg.png) no-repeat center top 50px;padding-top: 15rem}
 .sp_mod_history02 h3{color: #fff;}
 .sp_mod_history02 .tabs{background: #fff;display: flex;max-width: 650px;width: 100%;margin-left: auto;border-bottom: 1px solid #b5b5b5;margin-top: 140px;justify-content:space-between;margin-right: 100px;}
 .sp_mod_history02 .tabs li.active{}
@@ -1116,7 +1116,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_keyValue  dl dt{font-size: 2.4rem;font-weight: 500;}
 .sp_mod_keyValue  dl dt:after{content: '';display: block;width: 50px;height: 4px;background: #0c2155;margin: 2rem auto}
 .sp_mod_keyValue  dl dd{font-size: 1.8rem}
-.sp_mod_keyValue .keyValue_wrap .slick-track{display: flex;justify-content: center;width: 100% !important}
+.sp_mod_keyValue .keyValue_wrap:not(.slick-slider){display: flex;justify-content: center}
+.sp_mod_keyValue .keyValue_wrap .slick-track{display: flex;justify-content: center;}
 .sp_mod_keyValue .keyValue_wrap  .slick-list {margin: 0 -10px}
 .sp_mod_keyValue .keyValue_wrap  .slick-slide {margin: 0 10px;height: auto}
 .sp_mod_keyValue .keyValue_wrap  .slick-slide > div{height: 100%}
@@ -1129,19 +1130,31 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp_mod_keyTask .keyTask .slick-list {margin: 0 -10px}
 .sp_mod_keyTask .keyTask .slick-slide {margin: 0 10px}
 .sp_mod_keyTask .keyTask .slick-track{display: flex;justify-content: center}
-.sp_mod_keyTask .keyTask > div .ico{width: 120px;height: 120px;text-align: center;border-radius: 50%;position: relative;margin: 0 auto 2rem auto}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(1) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(2) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(3) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(4) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(5) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(6) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(7) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(8) .ico{background: url(/resource/images/entCntnts/sp_keyTask02.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(9) .ico{background: url(/resource/images/entCntnts/sp_keyTask03.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .slick-slide:nth-child(10) .ico{background: url(/resource/images/entCntnts/sp_keyTask01.png) no-repeat center #0c2155;}
-.sp_mod_keyTask .keyTask .num{background: #fff;color: #0c2155;border: 1px solid #0c2155;width: 45px;height: 45px;font-size: 2.2rem;display: flex;justify-content: center;align-items: center;position: absolute;left: 0;border-radius: 50%;font-weight: 500}
-.sp_mod_keyTask .keyTask p{font-size: 2.2rem;}
+.sp_mod_keyTask .keyTask .ico{display: block;width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.sp_mod_keyTask .keyTask .item{max-width: 330px;min-height: 330px;border-radius: 50%;display: flex !important;justify-content: center;align-content: center;flex-direction: column;padding: 20px 40px;box-sizing: border-box;margin: auto}
+.sp_mod_keyTask .keyTask > div .ico .num{display: none}
+.sp_mod_keyTask .keyTask .slick-slide.slick-active{transition: all 0.2s}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(1) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(3) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(4) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(6) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(7) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(9) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(10) .item{background: #fff;border: 1px solid #013281}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(2) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(5) .item,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(8) .item{background: #013281;color: #fff;}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(2) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(5) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(8) .ico:after{content: '';display: block;width: 40px;height: 4px;background: #fff;margin: 20px auto}
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(1) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(3) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(4) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(6) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(7) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(9) .ico:after,
+.sp_mod_keyTask .keyTask .slick-slide:nth-child(10).ico:after{content: '';display: block;width: 40px;height: 4px;background: #013281;margin: 20px auto}
+.sp_mod_keyTask .keyTask p{font-size: 2rem;}
 .sp_mod_keyTask .slick-prev, .sp_mod_keyTask .slick-next{width: 30px;height: 58px}
 .sp_mod_keyTask .slick-next{background: url(https://www.jobaba.net/resource/images/entCntnts/sp_itv_next.png) no-repeat;right: -80px}
 .sp_mod_keyTask .slick-prev{background: url(https://www.jobaba.net/resource/images/entCntnts/sp_itv_prev.png) no-repeat;left: -80px}
@@ -2200,6 +2213,7 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 .sp05_mod_talent .tw{position: relative}
 .sp05_mod_talent .tw:before{content: '';display: block;background: url(/resource/images/entCntnts/sp05_tal.png) no-repeat;width: 540px;max-height: 450px;height: calc(100% + 20px);position: absolute;left: 0;top: 50%;transform: translateY(-50%);z-index:0}
 .sp05_mod_talent .talent_wrap{background: #fff;padding: 4rem;box-sizing: border-box;border-radius: 10px 0 10px 0;border: 1px solid #ddd;max-width: 680px;margin-left: auto;position: relative;z-index: 5}
+.sp05_mod_talent .talent_wrap
 
 .sp05_mod_talent dl{border-bottom: 1px solid #ddd;padding-bottom: 1rem;margin-bottom: 3rem;position: relative;z-index: 5;background: #fff}
 .sp05_mod_talent dl:last-child{border-bottom: 0;padding-bottom: 0;margin-bottom: 0}
@@ -2779,6 +2793,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
 
     .sp05_mod_talent .talent_wrap{width: calc(100% - 30px)}
     .mt30{margin-top: 2rem}
+    
+    .sp_mod_keyTask .keyTask .item{max-width: 300px;min-height: 300px}
 
 
 }
@@ -3128,6 +3144,9 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp05_mod_process .pro_top > div:after{background-size: 15px;right: -40px;width: 40px}
     .sp05_mod_process .pro_top > div:nth-child(2n):after{display: none}
     .sp05_mod_process .list{padding: 3rem 0 0 0}
+    
+    .sp_mod_keyTask .keyTask .item{max-width: 300px;min-height: 300px}
+    .sp_mod_keyTask .keyTask p{font-size: 1.8rem}
 }
 
 @media all and (max-width:480px){
@@ -3370,5 +3389,8 @@ border-width: 7px 10px 7px 0;border-color: transparent #FFFFFF;display: block;wi
     .sp05_mod_review .item .ico{width: 85px;}
     .sp05_mod_review .item .ico img{width: 70px}
     .sp05_mod_review .item .txt{width: calc(100% - 85px);padding-left: 15px}
-
+    
+    .sp_mod_keyTask .keyTask .item{max-width: 260px;min-height: 260px}
+    .sp_mod_keyTask .keyTask .ico:after{margin: 10px auto}
+    .sp_mod_keyTask .keyTask .ico img{height: 35px}
 }

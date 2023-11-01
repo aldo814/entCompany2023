@@ -1,5 +1,31 @@
 $(document).ready(function () {
 
+        $('.sp_mod_keyTask .keyTask').slick({
+                    slidesToShow: 3,
+                    slidesToScroll:3,
+                    arrows: true,
+                    dots: false,
+                    infinite:false,
+                    responsive: [
+                        {
+                            breakpoint: 1025,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll:2,
+
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll:1,
+
+                            }
+                        }
+                    ]
+
+                });
             // 메뉴 fixed
             var fixGnb = $('#gnb-wrap.fixed-gnb');
             $('#gnb-wrap').addClass('fixed-gnb');
@@ -90,7 +116,7 @@ $(document).ready(function () {
             });
 
 
-    
+
                 if (window.innerWidth > 1024) {
                     var bizItem03 = $('.sp_mod_biz .bizDiv .item');
                     if (bizItem03.length > 2) {
@@ -367,7 +393,6 @@ $(document).ready(function () {
                         },
                     }
                 });
-    
 
 
                 $('.b_mod_product .tab_content:first').show();
@@ -397,78 +422,31 @@ $(document).ready(function () {
                     ]
 
                 });
-    
-    $('.sp_mod_keyValue .keyValue_wrap').slick({
-                    slidesToShow: 4,
-                    arrows: true,
-                    dots: false,
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
 
+                if($('.sp_mod_keyValue .keyValue_wrap dl.keyValue').length > 3){
+                	$('.sp_mod_keyValue .keyValue_wrap').slick({
+                        slidesToShow: 4,
+                        arrows: true,
+                        dots: false,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 3,
+
+                                }
+                            },
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 1,
+
+                                }
                             }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
+                        ]
 
-                            }
-                        }
-                    ]
-
-                });
-    
-    /*추가 */
-        $('.sp_mod_keyTask .keyTask').slick({
-                    slidesToShow: 3,
-                    arrows: true,
-                    dots: false,
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
-
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
-
-                            }
-                        }
-                    ]
-
-                });
-    
-        /*추가 */
-    $('.sp_mod_talent .talent_wrap').slick({
-                    slidesToShow: 3,
-                    arrows: true,
-                    dots: false,
-                    responsive: [
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
-
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
-
-                            }
-                        }
-                    ]
-
-                });
-    
+                    });
+                }
 
                 $(".imgFill").imgLiquid();
 
@@ -1207,129 +1185,54 @@ $(document).ready(function () {
                 $(".sp05_mod_culture .desc").height(maxHeight3);
 
 
+        
 
+                /*$('.sp_mod_keyValue .keyValue_wrap').slick({
+                    slidesToShow: 4,
+                    arrows: true,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+
+                            }
+                        }
+                    ]
+
+                });*/
+
+                $('.sp_mod_talent .talent_wrap').slick({
+                    slidesToShow: 3,
+                    arrows: true,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+
+                            }
+                        }
+                    ]
+
+                });
             });
 
 
 
-
-        $(window).resize(function () {
-
-
-            setTimeout(function () {
-                chart2.resize();
-                chart3.resize();
-                chart4.resize();
-                chart5.resize();
-                chart6.resize();
-                chart7.resize();
-                chart8.resize();
-                chart9.resize();
-            }, 200);
-
-            $('.sp_mod_comview04 .item img').each(function () {
-                var height1 = $('.sp_mod_comview04 .item img:nth-child(1)').outerHeight();
-                var height2 = $('.sp_mod_comview04 .item img:nth-child(2)').outerHeight();
-
-                $('.sp_mod_comview04 .item').css('height', height1 + height2 + 69)
-            })
-
-
-            if (window.innerWidth < 768) {
-
-                setTimeout(function () {
-                    chart2.resize();
-                    chart3.resize();
-                    chart4.resize();
-                    chart5.resize();
-                    chart6.resize();
-                    chart7.resize();
-                    chart8.resize();
-                    chart9.resize();
-                }, 200);
-
-                $('.fin_wrap:not(.slick-slider)').each(function () {
-                    $(this).slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        setPosition: 0,
-
-                    });
-                });
-
-
-                $('.sp05_mod_finance .flex_wrap:not(.slick-slider)').each(function () {
-                    $(this).slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        setPosition: 0,
-
-                    });
-                });
-            } else {
-                $('.fin_wrap').each(function () {
-                    // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
-                    var childDivCount = $(this).children().children().children('.slick-slide').length;
-                    if (childDivCount < 6) {
-                        $(this).slick('unslick');
-                    } else {}
-                });
-
-                $('.sp05_mod_finance').each(function () {
-                    // 현재 요소에서 자식으로 있는 div 엘리먼트 개수 확인
-                    var childDivCount = $(this).children().children().children('.slick-slide').length;
-                    if (childDivCount < 6) {
-                        $(this).slick('unslick');
-                    } else {}
-                });
-            }
-
-            if (window.innerWidth > 999) {
-
-                /* 스크립트내용*/
-
-            } else {
-
-                $('.a_mod_partners  .a_part').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true,
-                });
-
-            }
-
-            var heightArray = $(".sp_mod_biz04 .txt").map(function () {
-
-                return $(this).height();
-
-            }).get();
-
-            var maxHeight = Math.max.apply(Math, heightArray);
-
-            $(".sp_mod_biz04 .txt").height(maxHeight);
-
-
-            var heightArray2 = $(".sp_mod_biz05 .txt").map(function () {
-
-                return $(this).height();
-
-            }).get();
-
-            var maxHeight2 = Math.max.apply(Math, heightArray2);
-
-            $(".sp_mod_biz05 .txt").height(maxHeight2);
-
-            var heightArray3 = $(".sp05_mod_culture .desc").map(function () {
-
-                return $(this).height();
-
-            }).get();
-
-            var maxHeight3 = Math.max.apply(Math, heightArray3);
-
-            $(".sp05_mod_culture .desc").height(maxHeight3);
-
-
-
-
-        }).resize();
